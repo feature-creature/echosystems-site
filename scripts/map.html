@@ -1,0 +1,1066 @@
+	<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Goldsmiths: EchoSystmes</title>
+
+		<script src="./d3.min.js"></script>
+        <!-- <script src="../js/jquery-2.1.3.min.js"></script> -->
+		<script src="./jquery-3.3.1.min.js"></script>
+		<style type="text/css">
+			body{
+                font-family:sans-serif;
+				padding: 0;
+				margin: 0;
+				/*padding: 25px;*/
+			}
+			#artists{
+				list-style: none;
+				text-align: left;
+				padding: 0;
+                height: 100%;
+                overflow: scroll;
+                padding-right: 15px;
+                //padding-top: 65px;
+                padding-top: 0px;
+			}
+			.artist{
+				font-family: monospace;
+				padding: 0 10px 2px;
+				list-style: none;
+				font-size: 50px;
+				cursor: pointer;
+				color:#ccc;
+				width: 100%;
+				background-color: rgba(255, 255, 255, 0.90);
+				border-right: lightgray solid 1px;
+			}
+			.artist div{
+				display: none;
+			}
+			.artist.secondary{
+				color:gray !important;
+				list-style: none;
+			}
+			.artist.primary{
+				background-color: #ccc;
+				color: #000 !important;
+				list-style: none;
+				opacity: 0.80;
+				text-align: right;
+			}
+			.artist.primary div{
+				display: block;
+				font-size: 15px;
+				padding: 5% 2.5%;
+				color: gray;
+				opacity: 1;
+				font-size: 12px;
+			    text-align: left;
+			    position: absolute;
+			    margin-left: 210px;
+			    margin-top: -15px;
+			    width: 275px;
+			    z-index: 4;
+			    background-color: black;
+			    padding: 20px;
+			    color: white;
+			    font-family: helvetica;
+			    line-height: 1.3em;
+			    font-size:10px;
+			    text-align: left;
+			}
+			.artist.primary div h3{
+				font-size: 12px;
+				padding-top:0;
+				width
+			}
+			.artist.primary div h3 span{
+				float: right;
+			}
+
+			svg{
+				display: none;
+			}
+			@media (min-width: 700px){
+				#artists{
+    				position: absolute;
+					width: 200px;
+					margin: 0;
+					top: 0;
+					left: 0;
+					//border-top: darkgray solid 30px;
+
+				}
+				.artist{
+    				padding: 3px 10px;
+					font-size: 10px;
+				}
+				.info{
+					display: none;
+					display: absolute;
+					top: 0;
+					left: 0;
+					width: 200px;
+				    background-color: #ccc;
+				    color: #000 !important;
+					height: 100%;
+					z-index: 4;
+				}
+				svg{
+					//border-top: darkgray solid 30px;
+					display: block;
+                    width: 100%;
+                    height: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+    
+		<div style="width:100%; padding:10px 0px;position:absolute;top:0;left:0;color:white;z-index:1; font-size: 12px;background-color:darkgray;margin:0;">
+		    <h1 style="padding-left:10px;font-size:15px;">Goldsmiths Computational Arts 2018</h1>
+        </div>
+		<div>		
+			<ul id="artists">
+				<li class="artist" aid="0" connections="1,2,3" connections-total="3">Annie Tadne</li>
+				<li class="artist" aid="1" connections="0" connections-total="1">Audiovisual Performance</li>
+				<li class="artist" aid="2" connections="0" connections-total="1">Computer Vision</li>
+				<li class="artist" aid="3" connections="0" connections-total="1">Ecology</li>
+
+				<li class="artist" aid="4" connections="5,6,7" connections-total="3">Becky Aston</li>
+				<li class="artist" aid="5" connections="4" connections-total="1">Post-Colonialism</li>
+				<li class="artist" aid="6" connections="4" connections-total="1">Material Culture</li>
+				<li class="artist" aid="7" connections="4" connections-total="1">Simulation</li>
+
+				<li class="artist" aid="8" connections="9,10,11" connections-total="3">Chris Speed</li>
+				<li class="artist" aid="9" connections="8" connections-total="1">Glitch</li>
+				<li class="artist" aid="10" connections="8" connections-total="1">Sonification</li>
+				<li class="artist" aid="11" connections="8" connections-total="1">Shadow</li>
+
+				<li class="artist" aid="12" connections="13,14,15" connections-total="3">Colin Higgs</li>
+				<li class="artist" aid="13" connections="12" connections-total="1">Morphogenesis</li>
+				<li class="artist" aid="14" connections="12" connections-total="1">Gestures</li>
+				<li class="artist" aid="15" connections="12" connections-total="1">Genetic Algorithms</li>
+
+				<li class="artist" aid="16" connections="17,18,19" connections-total="3">Daniah Alsaleh</li>
+				<li class="artist" aid="17" connections="16" connections-total="1">Conceptualization</li>
+				<li class="artist" aid="18" connections="16" connections-total="1">Generative</li>
+				<li class="artist" aid="19" connections="16" connections-total="1">Infinity</li>
+
+				<li class="artist" aid="20" connections="21,22,23" connections-total="3">Danny Keig</li>
+				<li class="artist" aid="21" connections="20" connections-total="1">Ecology</li>
+				<li class="artist" aid="22" connections="20" connections-total="1">Emergence</li>
+				<li class="artist" aid="23" connections="20" connections-total="1">Networks</li>
+
+				<li class="artist" aid="24" connections="25,26,27" connections-total="3">David Williams</li>
+				<li class="artist" aid="25" connections="24" connections-total="1">Plasmoidal</li>
+				<li class="artist" aid="26" connections="24" connections-total="1">Supernormality</li>
+				<li class="artist" aid="27" connections="24" connections-total="1">Material Semiotics</li>
+
+				<li class="artist" aid="28" connections="29,30,31" connections-total="3">Eevi Rutanen</li>
+				<li class="artist" aid="29" connections="28" connections-total="1">Craft</li>
+				<li class="artist" aid="30" connections="28" connections-total="1">Touch</li>
+				<li class="artist" aid="31" connections="28" connections-total="1">Feminist Science</li>
+
+				<li class="artist" aid="32" connections="33,34,35" connections-total="3">Elias Berkhout</li>
+				<li class="artist" aid="33" connections="32" connections-total="1">Post-Colonialist Computing</li>
+				<li class="artist" aid="34" connections="32" connections-total="1">Real-Time Data</li>
+				<li class="artist" aid="35" connections="32" connections-total="1">Audio Visualization</li>
+
+				<li class="artist" aid="36" connections="37,38,39" connections-total="3">Freya Berkhout</li>
+				<li class="artist" aid="37" connections="36" connections-total="1">Digital Ecologies</li>
+				<li class="artist" aid="38" connections="36" connections-total="1">Bioluminescence</li>
+				<li class="artist" aid="39" connections="36" connections-total="1">Voice</li>
+
+				<li class="artist" aid="40" connections="41,42,43" connections-total="3">Gaytri Geeta Roopnarine</li>
+				<li class="artist" aid="41" connections="40" connections-total="1">Brain Connectivity</li>
+				<li class="artist" aid="42" connections="40" connections-total="1">Architectural Space</li>
+				<li class="artist" aid="43" connections="40" connections-total="1">Non-Human Agency</li>
+
+				<li class="artist" aid="44" connections="45,46,47" connections-total="3">Helena Wee</li>
+				<li class="artist" aid="45" connections="44" connections-total="1">Generative</li>
+				<li class="artist" aid="46" connections="44" connections-total="1">Landscape Painting</li>
+				<li class="artist" aid="47" connections="44" connections-total="1">Chinese Mythology</li>
+
+				<li class="artist" aid="48" connections="49,50,51" connections-total="3">Isaac Clarke</li>
+				<li class="artist" aid="49" connections="48" connections-total="1">Falling</li>
+				<li class="artist" aid="50" connections="48" connections-total="1">Intimate-Detour</li>
+				<li class="artist" aid="51" connections="48" connections-total="1">Pathfinding</li>
+
+				<li class="artist" aid="52" connections="53,54,55" connections-total="3">James Tregaskis</li>
+				<li class="artist" aid="53" connections="52" connections-total="1">William S. Burroughs</li>
+				<li class="artist" aid="54" connections="52" connections-total="1">Dystopia</li>
+				<li class="artist" aid="55" connections="52" connections-total="1">Transhumanist Cults</li>
+
+				<li class="artist" aid="56" connections="57,58,59" connections-total="3">Jemerie Wenger</li>
+				<li class="artist" aid="57" connections="56" connections-total="1">Oulipo</li>
+				<li class="artist" aid="58" connections="56" connections-total="1">Generative Processes</li>
+				<li class="artist" aid="59" connections="56" connections-total="1">Machine Learning</li>
+
+				<li class="artist" aid="60" connections="61,62,63" connections-total="3">Joseph Marsh</li>
+				<li class="artist" aid="61" connections="60" connections-total="1">Simulation</li>
+				<li class="artist" aid="62" connections="60" connections-total="1">Soft-Body Dynamics</li>
+				<li class="artist" aid="63" connections="60" connections-total="1">Artificial</li>
+
+				<li class="artist" aid="64" connections="65,66,67" connections-total="3">Julia Makivic</li>
+				<li class="artist" aid="65" connections="64" connections-total="1">Desire</li>
+				<li class="artist" aid="66" connections="64" connections-total="1">Nostalgia</li>
+				<li class="artist" aid="67" connections="64" connections-total="1">Narrative</li>
+
+				<li class="artist" aid="68" connections="69,70,71" connections-total="3">Laura Decker</li>
+				<li class="artist" aid="69" connections="68" connections-total="1">Theory of Mind</li>
+				<li class="artist" aid="70" connections="68" connections-total="1">Biologic / Machinic</li>
+				<li class="artist" aid="71" connections="68" connections-total="1">Techology and Society</li>
+
+				<li class="artist" aid="72" connections="73,74,75" connections-total="3">Laura Subirats Gonzalez</li>
+				<li class="artist" aid="73" connections="72" connections-total="1">Archive</li>
+				<li class="artist" aid="74" connections="72" connections-total="1">Future</li>
+				<li class="artist" aid="75" connections="72" connections-total="1">Machine Learning</li>
+
+				<li class="artist" aid="76" connections="77,78,79" connections-total="3">Laurie Carter</li>
+				<li class="artist" aid="77" connections="76" connections-total="1">Negative Space</li>
+				<li class="artist" aid="78" connections="76" connections-total="1">Impermanent</li>
+				<li class="artist" aid="79" connections="76" connections-total="1">Generative Audiovisual</li>
+
+				<li class="artist" aid="80" connections="81,82,83" connections-total="3">Luke Demarest</li>
+				<li class="artist" aid="81" connections="80" connections-total="1">Information Theory</li>
+				<li class="artist" aid="82" connections="80" connections-total="1">Quantum Computing</li>
+				<li class="artist" aid="83" connections="80" connections-total="1">Symbolism</li>
+
+				<li class="artist" aid="84" connections="85,86,87" connections-total="3">Megan Bates</li>
+				<li class="artist" aid="85" connections="84" connections-total="1">Environmentalism</li>
+				<li class="artist" aid="86" connections="84" connections-total="1">Digital/Biological Collaborations</li>
+				<li class="artist" aid="87" connections="84" connections-total="1">Colour</li>
+
+				<li class="artist" aid="88" connections="89,90,91" connections-total="3">Panja Gobel</li>
+				<li class="artist" aid="89" connections="88" connections-total="1">Computer Vision</li>
+				<li class="artist" aid="90" connections="88" connections-total="1">Phantom Limb Syndrome</li>
+				<li class="artist" aid="91" connections="88" connections-total="1">Hacking the Body</li>
+
+				<li class="artist" aid="92" connections="93,94,95" connections-total="3">Sabrina Recoules</li>
+				<li class="artist" aid="93" connections="92" connections-total="1">Entangled</li>
+				<li class="artist" aid="94" connections="92" connections-total="1">Mask</li>
+				<li class="artist" aid="95" connections="92" connections-total="1">Uncanny</li>
+
+				<li class="artist" aid="96" connections="97,98,99" connections-total="3">Sam Ludford</li>
+				<li class="artist" aid="97" connections="96" connections-total="1">Technology as Occult Phenomenon</li>
+				<li class="artist" aid="98" connections="96" connections-total="1">Natural Processes</li>
+				<li class="artist" aid="99" connections="96" connections-total="1">Technological Agency in Measurement and Representation</li>
+
+				<li class="artist" aid="100" connections="101,102,103" connections-total="3">Taoran Xu</li>
+				<li class="artist" aid="101" connections="100" connections-total="1">Immersive Experience</li>
+				<li class="artist" aid="102" connections="100" connections-total="1">Headspace</li>
+				<li class="artist" aid="103" connections="100" connections-total="1">Soundwalk</li>
+
+				<li class="artist" aid="104" connections="105,106,107" connections-total="3">Theodora Fartan</li>
+				<li class="artist" aid="105" connections="104" connections-total="1">Light</li>
+				<li class="artist" aid="106" connections="104" connections-total="1">Kinetic</li>
+				<li class="artist" aid="107" connections="104" connections-total="1">Ethereal</li>
+
+
+				<li class="artist" aid="80" connections="17,80,33,68,38,45,69,56,47,61,74,14,41,78,11,32,28,48,40,18,7,13,55,2,16,71,22,10" connections-total="28">
+				    Luke Demarest	
+					<div>
+						<h3>Luke Demarest<span>+</span></h3>
+						Two features prepared the poet Guillaume Apollinaire to become one of abstraction’s most effective proponents: 
+						his savvy command of Paris’s thriving print-media industry of the 1910s and his impressive social skills. 
+						He was a prolific critic who contributed to both specialized cultural reviews and mass-circulated dailies. 
+						Apollinaire wrote a column that appeared most days in the newspaper <i>L’Itransigeant</i> and another for <i>Paris-Journal</i>. 
+						n 1912, he launched a review of his own, <i>Les Soirées de Paris</i>, which published poetry and cultural commentary 
+						of all sorts—reviews, feuilletons, and the poet’s polemical pieces on the direction of painting. 
+						Apollinaire was so keenly attuned to developments in the visual arts 
+						that he often anticipated and even set the agenda for radical shifts in artistic practice. 
+						In February of 1912, just as a handful of artists in Europe and the United States began to abandon figurative references 
+						in their work, he declared, “Young painters of the extreme schools want to make pure painting, 
+						an entirely new art form. It is only at its beginning, and not yet as abstract as it wants to be.”
+						<br><br>
+						the most connected
+						<br>
+						28 / 82 connections
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div style="width:100%; padding:10px 0px;position:fixed;bottom:0px;left:0;color:white;z-index:1; font-size: 12px;background-color:darkgray;margin:0;">
+		    <h1 style="padding-right:20px;font-size:15px;text-align: right">Echosystems</h1>
+        </div>
+		<!-- <script src="./oomm.js"></script> -->
+
+		<script type="text/javascript">
+		    // START TODO: change links from integers to persons names.
+		 //    links.forEach(function(e) {
+			//     var sourceNode = dataset.nodes.filter(function(n) { return n.name === e.source; })[0],
+			//     targetNode = dataset.nodes.filter(function(n) { return n.name === e.target; })[0];
+			    	
+			//     dataset.edges.push({source: sourceNode, target: targetNode, value: e.value});
+			// })
+			// END TODO
+
+			//Width and height
+			var w = window.innerWidth;
+			var h = window.innerHeight - 30;
+			//var h = window.innerHeight * 1.5;
+
+			//Original data
+			var dataset = {
+				nodes: [
+					{ name: "Annie Tadne", type: "artist"},
+				    { name: "AUDIOVISUAL PERFORMANCE", type: "personal-theme"},
+                    { name: "COMPUTER VISION", type: "personal-theme"},
+                    { name: "ECOLOGY", type: "personal-theme"},
+                    
+					{ name: "Becky Aston", type:"artist"},
+					{ name: "POST-COLONIALISM", type:"personal-theme" },
+					{ name: "MATERIAL CULTURE" , type:"personal-theme" },
+					{ name: "SIMULATION", type:"personal-theme"  },
+
+					{ name: "Chris Speed", type:"artist"},
+					{ name: "GLITCH", type:"personal-theme"  },
+					{ name: "SONIFICATION", type:"personal-theme"  },
+					{ name: "SHADOW", type:"personal-theme"  },
+
+					{ name: "Colin Higgs", type:"artist" },
+					{ name: "MORPHOGENESIS", type:"personal-theme"  },
+					{ name: "GESTURES", type:"personal-theme"  },
+					{ name: "GENETIC ALGORITHMS", type:"personal-theme"  },
+
+					{ name: "Daniah Alsaleh", type:"artist"},
+					{ name: "CONCEPTUALIZATION", type:"personal-theme"  },
+					{ name: "GENERATIVE", type:"personal-theme"  },
+					{ name: "INTERACTIVITY", type:"personal-theme"  },
+
+					{ name: "Danny Keig", type:"artist"},
+					{ name: "ECOLOGY", type:"personal-theme"  },
+					{ name: "EMERGENCE", type:"personal-theme"  },
+					{ name: "NETWORKS", type:"personal-theme"  },
+
+					{ name: "David Williams", type:"artist" },
+					{ name: "PLASMOIDAL", type:"personal-theme"  },
+					{ name: "SUPERNORMALITY", type:"personal-theme"  },
+					{ name: "MATERIAL SEMIOTICS", type:"personal-theme"  },
+
+					{ name: "Eevi Rutanen", type:"artist" },
+					{ name: "CRAFT", type:"personal-theme"  },
+					{ name: "TOUCH", type:"personal-theme"  },
+					{ name: "FEMINIST SCIENCE", type:"personal-theme"  },
+
+					{ name: "Elias Berkhout", type:"artist"},				
+					{ name: "POST-COLONIALIST COMPUTING", type:"personal-theme"  },
+					{ name: "REAL-TIME DATA", type:"personal-theme"  },
+					{ name: "AUDIO VISUALIZATION", type:"personal-theme"  },
+
+					{ name: "Freya Berkhout", type:"artist" },
+					{ name: "DIGITAL ECOLOGIES", type:"personal-theme"  },
+					{ name: "BIOLUMINESCENCE", type:"personal-theme"  },
+					{ name: "VOICE", type:"personal-theme"  },
+
+					{ name: "Gaytri Geeta Roopnarine", type:"artist"},
+					{ name: "BRAIN CONNECTIVITY", type:"personal-theme"  },
+					{ name: "ARCHITECTURAL SPACE", type:"personal-theme"  },
+					{ name: "NON-HUMAN AGENCY", type:"personal-theme"  },
+
+
+					{ name: "Helena Wee", type:"artist"},
+					{ name: "GENERATIVE", type:"personal-theme"  },
+					{ name: "LANDSCAPE PAINTING", type:"personal-theme"  },
+					{ name: "CHINESE MYTHOLOGY", type:"personal-theme"  },
+
+					{ name: "Isaac Clarke", type:"artist" },
+					{ name: "FALLING", type:"personal-theme"  },
+					{ name: "INTIMATE-DETOUR", type:"personal-theme"  },
+					{ name: "PATHFINDING", type:"personal-theme"  },
+
+					{ name: "James Tregaskis", type:"artist" },
+					{ name: "WILLIAM S. BURROUGHS", type:"personal-theme"  },
+					{ name: "DYSTOPIA", type:"personal-theme"  },
+					{ name: "TRANSHUMANIST CULTS", type:"personal-theme"  },
+
+					{ name: "Jeremie Wenger", type:"artist" },
+					{ name: "OULIPO", type:"personal-theme"  },
+					{ name: "GENERATIVE PROCESSES", type:"personal-theme"  },
+					{ name: "MACHINE LEARNING", type:"personal-theme"  },
+
+					{ name: "Joseph Marsh", type:"artist" },
+					{ name: "SIMULATION", type:"personal-theme"  },
+					{ name: "SOFT-BODY DYNAMICS", type:"personal-theme"  },
+					{ name: "ARTIFICIAL", type:"personal-theme"  },
+
+					{ name: "Julia Makivic", type:"artist" },
+					{ name: "DESIRE", type:"personal-theme"  },
+					{ name: "NOSTALGIA", type:"personal-theme"  },
+					{ name: "NARRATIVE", type:"personal-theme"  },
+
+					{ name: "Laura Decker", type:"artist" },
+					{ name: "THEORY OF MIND", type:"personal-theme"  },
+					{ name: "BIOLOGIC-MACHINIC", type:"personal-theme"  },
+					{ name: "TECHNOLOGY AND SOCIETY", type:"personal-theme"  },
+
+					{ name: "Laura Subirats Gonzalez", type:"artist" },
+					{ name: "ARCHIVE", type:"personal-theme"  },
+					{ name: "FUTURE", type:"personal-theme"  },
+					{ name: "MACHINE LEARNING", type:"personal-theme"  },
+
+					{ name: "Laurie Carter", type:"artist" },
+					{ name: "NEGATIVE SPACE", type:"personal-theme"  },
+					{ name: "IMPERMANENT", type:"personal-theme"  },
+					{ name: "GENERATIVE AUDIOVISUAL", type:"personal-theme"  },
+
+					{ name: "Luke Demarest", type:"artist" },
+					{ name: "INFORMATION THEORY", type:"personal-theme"  },
+					{ name: "QUANTUM COMPUTING", type:"personal-theme"  },
+					{ name: "SYMBOLISM", type:"personal-theme"  },
+
+					{ name: "Megan Bates", type:"artist" },
+					{ name: "ENVIRONMENTALISM", type:"personal-theme"  },
+					{ name: "DIGITAL/BIOLOGICAL COLLABORATIONS", type:"personal-theme"  },
+					{ name: "COLOUR", type:"personal-theme"  },
+
+					{ name: "Panja Gobel", type:"artist" },
+					{ name: "COMPUTER VISION", type:"personal-theme"  },
+					{ name: "PHANTOM LIMB SYNDROME", type:"personal-theme"  },
+					{ name: "HACKING THE BODY", type:"personal-theme"  },
+
+					{ name: "Sabrina Recoules", type:"artist" },
+					{ name: "ENTANGLED", type:"personal-theme"  },
+					{ name: "MASK", type:"personal-theme"  },
+					{ name: "UNCANNY", type:"personal-theme"  },
+
+					{ name: "Sam Ludford", type:"artist" },
+					{ name: "TECHNOLOGY AS OCCULT PHENOMENON", type:"personal-theme"  },
+					{ name: "NATURAL PROCESSES", type:"personal-theme"  },
+					{ name: "TECHNOLOGICAL AGENCY", type:"personal-theme"  },
+
+					{ name: "Taoran Xu", type:"artist" },
+					{ name: "IMMERSIVE EXPERIENCE", type:"personal-theme"  },
+					{ name: "HEADSCAPE", type:"personal-theme"  },
+					{ name: "SOUNDWALK", type:"personal-theme"  },
+
+					{ name: "Theodora Fartan", type:"artist" },
+					{ name: "LIGHT", type:"personal-theme"  },
+					{ name: "KINETIC", type:"personal-theme"  },
+					{ name: "ETHEREAL", type:"personal-theme"  },
+
+
+					{ name: "THEME 1", type:"group-theme"  },
+					{ name: "THEME 2", type:"group-theme"  },
+					{ name: "THEME 3", type:"group-theme"  },
+					{ name: "THEME 4", type:"group-theme"  },
+					{ name: "THEME 5", type:"group-theme"  },
+					{ name: "THEME 6", type:"group-theme"  },
+					{ name: "THEME 7", type:"group-theme"  },
+
+
+				],
+				edges: [
+					
+                    // Annie Tadne
+					{ source: 0, target: 1},
+					{ source: 0, target: 2},
+					{ source: 0, target: 3},
+					
+					{ source: 1, target: 0},
+					{ source: 2, target: 0},
+					{ source: 3, target: 0},
+
+                    // Becky Aston
+					{ source: 4, target: 5 },
+					{ source: 4, target: 6 },
+					{ source: 4, target: 7 },
+					
+					{ source: 5, target: 4 },
+					{ source: 6, target: 4 },
+					{ source: 7, target: 4 },
+
+                    // Chris Speed
+					{ source: 8, target: 9 },
+					{ source: 8, target: 10 },
+					{ source: 8, target: 11 },
+
+					{ source: 9, target: 8 },
+					{ source: 10, target: 8 },
+					{ source: 11, target: 8 },
+
+                    // Colin Higgs
+					{ source: 12, target: 13 },
+					{ source: 12, target: 14 },
+					{ source: 12, target: 15 },
+
+					{ source: 13, target: 12 },
+					{ source: 14, target: 12 },
+					{ source: 15, target: 12 },
+
+                    // Daniah Alsaleh
+					{ source: 16, target: 17 },
+					{ source: 16, target: 18 },
+					{ source: 16, target: 19 },
+
+					{ source: 17, target: 16 },
+					{ source: 18, target: 16 },
+					{ source: 19, target: 16 },
+
+                    // Danny Keig
+					{ source: 20, target: 21 },
+					{ source: 20, target: 22 },
+					{ source: 20, target: 23 },
+
+					{ source: 21, target: 20 },
+					{ source: 22, target: 20 },
+					{ source: 23, target: 20 },
+
+                    // David Williams
+					{ source: 24, target: 25 },
+					{ source: 24, target: 26 },
+					{ source: 24, target: 27 },
+
+					{ source: 25, target: 24 },
+					{ source: 26, target: 24 },
+					{ source: 27, target: 24 },
+
+                    // Eevi Rutanen
+					{ source: 28, target: 29 },
+					{ source: 28, target: 30 },
+					{ source: 28, target: 31 },
+
+					{ source: 29, target: 28 },
+					{ source: 30, target: 28 },
+					{ source: 31, target: 28 },
+
+                    // Elias Berkhout
+					{ source: 32, target: 33 },
+					{ source: 32, target: 34 },
+					{ source: 32, target: 35 },
+
+					{ source: 33, target: 32 },
+					{ source: 34, target: 32 },
+					{ source: 35, target: 32 },
+
+                    // Freya Berkhout
+					{ source: 36, target: 37 },
+					{ source: 36, target: 38 },
+					{ source: 36, target: 39 },
+
+					{ source: 37, target: 36 },
+					{ source: 38, target: 36 },
+					{ source: 39, target: 36 },
+
+                    // Gaytri Geeta Roopnarine
+					{ source: 40, target: 41 },
+					{ source: 40, target: 42 },
+					{ source: 40, target: 43 },
+
+					{ source: 41, target: 40 },
+					{ source: 42, target: 40 },
+					{ source: 43, target: 40 },
+
+                    // Helena Wee
+					{ source: 44, target: 45 },
+					{ source: 44, target: 46 },
+					{ source: 44, target: 47 },
+
+					{ source: 45, target: 44 },
+					{ source: 46, target: 44 },
+					{ source: 47, target: 44 },
+
+                    // Isaac Clarke
+					{ source: 48, target: 49 },
+					{ source: 48, target: 50 },
+					{ source: 48, target: 51 },
+
+					{ source: 49, target: 48 },
+					{ source: 50, target: 48 },
+					{ source: 51, target: 48 },
+
+                    // James Tregaskis
+					{ source: 52, target: 53 },
+					{ source: 52, target: 54 },
+					{ source: 52, target: 55 },
+
+					{ source: 53, target: 52 },
+					{ source: 54, target: 52 },
+					{ source: 55, target: 52 },
+                    
+                    // Jeremie Wenger
+					{ source: 56, target: 57 },
+					{ source: 56, target: 58 },
+					{ source: 56, target: 59 },
+
+					{ source: 57, target: 56 },
+					{ source: 58, target: 56 },
+					{ source: 59, target: 56 },
+
+                    // Joseph Marsh
+					{ source: 60, target: 61 },
+					{ source: 60, target: 62 },
+					{ source: 60, target: 63 },
+
+					{ source: 61, target: 60 },
+					{ source: 62, target: 60 },
+					{ source: 63, target: 60 },
+
+                    // Julia Makivic
+					{ source: 64, target: 65 },
+					{ source: 64, target: 66 },
+					{ source: 64, target: 67 },
+
+					{ source: 65, target: 64 },
+					{ source: 66, target: 64 },
+					{ source: 67, target: 64 },
+
+                    // Laura Decker
+					{ source: 68, target: 69 },
+					{ source: 68, target: 70 },
+					{ source: 68, target: 71 },
+
+					{ source: 69, target: 68 },
+					{ source: 70, target: 68 },
+					{ source: 71, target: 68 },
+
+                    // Laura Subirats Gonzalez
+					{ source: 72, target: 73 },
+					{ source: 72, target: 74 },
+					{ source: 72, target: 75 },
+
+					{ source: 73, target: 72 },
+					{ source: 74, target: 72 },
+					{ source: 75, target: 72 },
+
+                    // laurie Carter
+					{ source: 76, target: 77 },
+					{ source: 76, target: 78 },
+					{ source: 76, target: 79 },
+
+					{ source: 77, target: 76 },
+					{ source: 78, target: 76 },
+					{ source: 79, target: 76 },
+
+                    // Luke Demarest
+					{ source: 80, target: 81 },
+					{ source: 80, target: 82 },
+					{ source: 80, target: 83 },
+
+					{ source: 81, target: 80 },
+					{ source: 82, target: 80 },
+					{ source: 83, target: 80 },
+
+                    // Megan Bates
+					{ source: 84, target: 85 },
+					{ source: 84, target: 86 },
+					{ source: 84, target: 87 },
+
+					{ source: 85, target: 84 },
+					{ source: 86, target: 84 },
+					{ source: 87, target: 84 },
+
+                    // Panja Gobel
+					{ source: 88, target: 89 },
+					{ source: 88, target: 90 },
+					{ source: 88, target: 91 },
+
+					{ source: 89, target: 88 },
+					{ source: 90, target: 88 },
+					{ source: 91, target: 88 },
+
+                    // Sabrina Recoules
+					{ source: 92, target: 93 },
+					{ source: 92, target: 94 },
+					{ source: 92, target: 95 },
+
+					{ source: 93, target: 92 },
+					{ source: 94, target: 92 },
+					{ source: 95, target: 92 },
+
+                    // Sam Ludford
+					{ source: 96, target: 97 },
+					{ source: 96, target: 98 },
+					{ source: 96, target: 99 },
+
+					{ source: 97, target: 96 },
+					{ source: 98, target: 96 },
+					{ source: 99, target: 96 },
+
+                    // Taoran Xu
+					{ source: 100, target: 101 },
+					{ source: 100, target: 102 },
+					{ source: 100, target: 103 },
+
+					{ source: 101, target: 100 },
+					{ source: 102, target: 100 },
+					{ source: 103, target: 100 },
+
+                    // Theodora Fartan
+					{ source: 104, target: 105 },
+					{ source: 104, target: 106 },
+					{ source: 104, target: 107 },
+
+					{ source: 105, target: 104 },
+					{ source: 106, target: 104 },
+					{ source: 107, target: 104 },
+
+
+                    // ecology
+					{ source: 3, target: 21 },
+					{ source: 3, target: 37 },
+					{ source: 3, target: 85 },
+					{ source: 3, target: 86 },
+					{ source: 3, target: 98 },
+					{ source: 21, target: 3 },
+					{ source: 21, target: 37 },
+					{ source: 21, target: 85 },
+					{ source: 21, target: 86 },
+					{ source: 21, target: 98 },
+					{ source: 37, target: 3 },
+					{ source: 37, target: 21 },
+					{ source: 37, target: 85 },
+					{ source: 37, target: 86 },
+					{ source: 37, target: 98 },
+					{ source: 85, target: 3 },
+					{ source: 85, target: 21 },
+					{ source: 85, target: 37 },
+					{ source: 85, target: 86 },
+					{ source: 85, target: 98 },
+					{ source: 86, target: 3 },
+					{ source: 86, target: 21 },
+					{ source: 86, target: 37 },
+					{ source: 86, target: 85 },
+					{ source: 86, target: 98 },
+					{ source: 98, target: 3 },
+					{ source: 98, target: 21 },
+					{ source: 98, target: 37 },
+					{ source: 98, target: 85 },
+					{ source: 98, target: 86 },
+
+					{ source: 98, target: 70 },
+					{ source: 98, target: 86 },
+					{ source: 98, target: 25 },
+					{ source: 70, target: 98 },
+					{ source: 70, target: 86 },
+					{ source: 86, target: 70 },
+					{ source: 86, target: 98 },
+					{ source: 25, target: 98 },
+
+                    // generative
+					{ source: 18, target: 45 },
+					{ source: 18, target: 58 },
+					{ source: 18, target: 79 },
+					{ source: 45, target: 18 },
+					{ source: 45, target: 58 },
+					{ source: 45, target: 79 },
+					{ source: 58, target: 18 },
+					{ source: 58, target: 45 },
+					{ source: 58, target: 79 },
+					{ source: 79, target: 18 },
+					{ source: 79, target: 45 },
+					{ source: 79, target: 58 },
+
+					{ source: 15, target: 58},
+					{ source: 13, target: 58 },
+					{ source: 58, target: 15},
+					{ source: 58, target: 13},
+
+                    // entangled
+					{ source: 82, target: 93 },
+					{ source: 93, target: 82 },
+
+                    // ethereal
+					{ source: 107, target: 78 },
+					{ source: 78, target: 107 },
+
+                    // agencies
+					{ source: 43, target: 99 },
+					{ source: 99, target: 43 },
+
+                    // post-colonial
+					{ source: 5, target: 33 },
+					{ source: 33, target: 5 },
+
+                    // material
+					{ source: 6, target: 27 },
+					{ source: 6, target: 73 },
+					{ source: 27, target: 6 },
+					{ source: 73, target: 6 },
+
+                    // simulation
+					{ source: 7, target: 61 },
+					{ source: 61, target: 7 },
+
+                    // audiovisual
+					{ source: 1, target: 79 },
+					{ source: 1, target: 35 },
+					{ source: 1, target: 39 },
+					{ source: 1, target: 10 },
+					{ source: 1, target: 103 },
+					{ source: 79, target: 1 },
+					{ source: 79, target: 35 },
+					{ source: 79, target: 39 },
+					{ source: 79, target: 10 },
+					{ source: 35, target: 1 },
+					{ source: 35, target: 79 },
+					{ source: 35, target: 39 },
+					{ source: 35, target: 10 },
+					{ source: 39, target: 1 },
+					{ source: 39, target: 79 },
+					{ source: 39, target: 35 },
+					{ source: 39, target: 10 },
+					{ source: 10, target: 1 },
+					{ source: 10, target: 79  },
+					{ source: 10, target: 35 },
+					{ source: 10, target: 39 },
+					{ source: 103, target: 1 },
+
+                    // computer vision
+
+					{ source: 2, target: 89 },
+					{ source: 89, target: 2 },
+                    
+                    // machine learning
+					{ source: 59, target: 75 },
+					{ source: 75, target: 59 },
+					{ source: 63, target: 59 },
+					{ source: 63, target: 75 },
+
+                    // head
+					{ source: 94, target: 102 },
+					{ source: 102, target: 94},
+					{ source: 102, target: 41},
+					{ source: 41, target: 102},
+
+                    // space
+					{ source: 42, target: 77 },
+					{ source: 42, target: 102 },
+					{ source: 77, target: 42 },
+					{ source: 77, target: 102 },
+					{ source: 102, target: 42 },
+					{ source: 102, target: 77 },
+
+                    // data + information
+					{ source: 34, target: 81 },
+					{ source: 81, target: 34 },
+                    
+                    // soft
+					{ source: 62, target: 30 },
+					{ source: 30, target: 62 },
+                    
+                    // phantom 
+					{ source: 26, target: 90 },
+					{ source: 90, target: 26 },
+
+                    // pathfinding
+					{ source: 51, target: 58 },
+					{ source: 58, target: 51 },
+
+                    // meaning
+					{ source: 27, target: 83 },
+					{ source: 83, target: 27 },
+					{ source: 83, target: 6 },
+
+
+
+                    // group themes
+                    
+                    // Enviro/eco/bio/nature
+					{ source: 108, target: 12 },
+					{ source: 108, target: 20 },
+					{ source: 108, target: 24 },
+					{ source: 108, target: 36 },
+					{ source: 108, target: 96 },
+					{ source: 108, target: 84 },
+					{ source: 12 , target: 12 },
+					{ source: 20, target: 108 },
+					{ source: 24, target: 108 },
+					{ source: 36, target: 108 },
+					{ source: 96, target: 108 },
+					{ source: 84, target: 108 },
+			        // AV/Performance
+					{ source: 109, target: 0 },
+					{ source: 109, target: 8 },
+					{ source: 109, target: 76 },
+					{ source: 109, target: 100 },
+					{ source: 0, target: 109 },
+					{ source: 8, target: 109 },
+					{ source: 76, target: 109 },
+					{ source: 100, target: 109 },
+					// Architectural/Social/Theoretical/Sculpture
+					{ source: 110, target: 4 },
+					{ source: 110, target: 80 },
+					{ source: 110, target: 40 },
+					{ source: 110, target: 32 },
+					{ source: 110, target: 44 },
+					{ source: 4, target: 110 },
+					{ source: 80, target: 110 },
+					{ source: 40, target: 110 },
+					{ source: 32, target: 110 },
+					{ source: 44, target: 110 },
+					// Tactile/soft body/body hacking"
+					{ source: 111, target: 28 },
+					{ source: 111, target: 88 },
+					{ source: 28, target: 111 },
+					{ source: 88, target: 111 },
+					// Dynamic/kinetic/movement/CV
+					{ source: 112, target: 48 },
+					{ source: 112, target: 92 },
+					{ source: 112, target: 16 },
+					{ source: 48, target: 112 },
+					{ source: 92, target: 112 },
+					{ source: 16, target: 112 },
+					// Narrative/Literary/Gaming
+					{ source: 113, target: 64 },
+					{ source: 113, target: 56 },
+					{ source: 113, target: 68 },
+					{ source: 64, target: 113 },
+					{ source: 56, target: 113 },
+					{ source: 68, target: 113 },
+					// Speculative/Dystopia
+					{ source: 114, target: 72 },
+					{ source: 114, target: 4 },
+					{ source: 114, target: 52 },
+					{ source: 72, target: 114 },
+					{ source: 4, target: 114 },
+					{ source: 52, target: 114 },
+
+
+				]
+			};
+
+			//Initialize a default force layout, using the nodes and edges in dataset
+			var force = d3.layout.force()
+								 .nodes(dataset.nodes)
+								 .links(dataset.edges)
+								 .size([w, h])
+								 .linkDistance([200])
+								 .charge([-800])
+								 .start();
+
+			//Create SVG element
+			var svg = d3.select("body")
+						.append("svg")
+						.attr("width", w)
+						.attr("height", h)
+						.call(d3.behavior.zoom().on("zoom", function () {
+							svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
+						}))
+        				.append('g');
+			
+			//Create edges as lines
+			var edges = svg.selectAll("line")
+				.data(dataset.edges)
+				.enter()
+				.append("line")
+				.style({"stroke": function(d,i){
+				return "#ccc";
+				},'opacity':'1'})
+				.style("stroke-width", .25);
+
+            //
+            //
+			// Create each node as a circle
+            //
+            //
+			var nodes = svg.selectAll("circle")
+				.data(dataset.nodes)
+				.enter()
+				.append("circle")
+                .attr("r", function(d,i){
+                    if(dataset.nodes[i].type == "artist"){
+                        return "10";
+                    }else if(dataset.nodes[i].type == "group-theme"){
+                        return "10";
+                    }else{
+                        return "10";
+                    }
+                })
+				.attr("aid", function(d,i){
+					return i;
+				})
+				.style({"fill":"white","stroke":'#ccc'})
+				.call(force.drag);
+		
+            //
+            //
+            // Create a title for each node
+            //
+            //
+			var titles = svg.selectAll("text")
+				.data(dataset.nodes)
+				.enter()
+				.append("text")
+			  .text(function(d,i) {
+					return dataset.nodes[i].name
+			  })
+			  .attr("font-family", "helvetica")
+              .attr("font-size", function(d,i){
+                    if(dataset.nodes[i].type == "artist"){
+                        return "17px";
+                    }else if(dataset.nodes[i].type == "group-theme"){
+                        return "21px";
+                    }else{
+                        return "12px";
+                    }
+                })
+
+
+			  .attr("aid",function(d,i){
+			  	return i;
+			  })
+			  // .attr("fill", "#ccc")
+			  .attr("fill", "black")	
+				.call(force.drag);
+
+
+            //
+            //
+			//Every time the simulation "ticks", this will be called
+            //
+            //
+			force.on("tick", function() {
+
+				edges.attr("x1", function(d) { return d.source.x; })
+					 .attr("y1", function(d) { return d.source.y; })
+					 .attr("x2", function(d) { return d.target.x; })
+					 .attr("y2", function(d) { return d.target.y; });
+			
+				nodes.attr("cx", function(d) { return d.x; })
+					 .attr("cy", function(d) { return d.y; });
+				
+                // title locations
+				titles.attr("x", function(d) { return d.x -10;})
+					 .attr("y", function(d) { return d.y - 20;});
+
+			});
+
+            //
+            //
+            // click on element 
+            //
+            //
+			$('li,circle,text').on('click',function(){
+
+				var aid = JSON.stringify(this.getAttribute('aid'))
+				// console.log(aid)
+				$('circle').css({'fill':'white',"stroke":'#ccc'})
+				$('circle[aid='+ aid +']').css({'fill':'black','stroke':'gray'})
+				
+				var connects = $('li[aid='+ aid +']').attr('connections').split(",")
+				
+				for(var i = 0; i < connects.length; i++){
+					$('circle[aid='+ connects[i] +']').css({'fill':'#999','stroke':'black'})
+				}
+				d3.selectAll('.artist').attr('class','artist')
+				d3.select('li[aid='+ aid +']').attr('class','artist primary')
+				cl = d3.select('li[aid='+ aid +']').attr('connections').split(",");
+				for(var i =0;i<cl.length;i++){
+					var aidz =".artist[aid='"+cl[i]+"']"; 
+				  	d3.selectAll(aidz).attr('class','artist secondary')
+				}
+				var conlines = $('circle[aid='+ aid +']').attr('cx')
+				$('line').css({'stroke':'#ccc','stroke-width':'0.25'})
+				$('line[x1="'+ conlines +'"]').css({'stroke':'black','stroke-width':'0.5'})
+			})
+		</script>
+		<style type="text/css">
+			circle:hover, text:hover, li:hover {
+				cursor: pointer;
+			}
+		</style>
+	</body>
+</html>

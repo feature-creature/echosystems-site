@@ -1,0 +1,349 @@
+ .header-logo{
+            
+            width:550px;
+            margin: 0px 0 0 -275px !important;
+            padding-left:50%;
+            display: block;
+            position: absolute;
+            color: white;
+            text-align:center;
+            top:25%;
+        }
+        
+        html, body, #masthead-wrapper, canvas, main, header{
+            margin:0;
+            border:0;
+            padding:0;
+            background-color: white;
+            font-family:spot_mono;
+            text-align: center;
+            font-family:spot_mono;
+        }
+        
+        canvas{
+            display:block;
+        }
+        
+        footer{
+            position: absolute;
+            bottom:0;
+            margin:0;
+            padding:0;
+            width:100%;
+            text-align:center;
+            background-color:white;
+            border-top: black 1px solid;
+            
+        }
+        
+        p{
+            padding: 5px 0;
+            margin: 0;
+            border-bottom: 1px solid black;
+        }
+
+p.artist{
+    border:none;
+}
+        
+        @font-face{
+            
+            font-family: spot_mono;
+            src: url(./fonts/spot_mono_webfonts/spot_mono_light.woff);
+        }
+
+.top-nav{
+    
+    /*display: none*/;
+
+    margin:0;
+           /* position:absolute;*/
+    width:100%;
+    /*padding:5px 0;*/
+    background-color: white;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+    /*position:fixed;*/
+    position:sticky;
+    top:0;
+    z-index: 100;
+            
+}
+
+.top-nav a{
+    display:inline;
+    background-color: #000;
+    color:#fff;
+    padding:5px 10px;
+    float:right;
+    font-size:20px;
+    font-weight:bold;
+    margin-left:18px;
+    position: relative;
+    right: 5px;
+    
+    
+}
+
+.top-nav h1, .bottom-nav h1{
+    font-size: 1em;
+}
+.top-nav h3, .bottom-nav h3{
+    font-size: 1em;
+    position: absolute;
+    margin: 0;
+    height: 100%; line-height: 3em;
+    width: 18%;
+}
+
+.bottom-nav{
+    
+    /*display: none*/;
+
+    margin:0;
+           /* position:absolute;*/
+    width:100%;
+    /*padding:5px 0;*/
+    background-color: white;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+    /*position:fixed;*/
+    position:fixed;
+    bottom:0;
+    z-index: 100;
+            
+}
+
+
+.bottom-nav a{
+    display:inline;
+    background-color: #000;
+    color:#fff;
+    padding:5px 10px;
+    float:right;
+    font-size:20px;
+    font-weight:bold;
+    margin-left:18px;
+    position: relative;
+    right: 5px;
+    
+    
+}
+
+
+.echosystems-content{
+    margin-top:50px;
+    display: none;
+}    
+        h2{
+            
+            position: relative;
+            display: inline;
+            
+           
+        }
+        
+        body{
+            
+            font-family: spot_mono;
+        }
+
+    
+        .map-container, .connections-container, .info-container{
+            margin-left: 18%;
+            margin-right: 18%;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
+
+        
+        .map{
+            
+            margin-top:40px;
+            padding-left:40px;
+            margin-bottom:40px;
+            width:80%;
+            /*width: 100%*/
+            display:block;
+           
+            
+        }
+
+
+        .svg-container {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%; /* aspect ratio */
+            vertical-align: top;
+            overflow: hidden;
+        }
+        .svg-content-responsive {
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+
+
+
+.theme-nav{
+    float:right;
+    width:15%;
+    position: absolute;
+    right: 0px;
+    clear: right;
+    
+    width: 18%;
+    border-left: 1px solid #000;
+    display:block;
+}
+
+.theme-nav h3{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.theme-nav p{
+    text-align:left;
+    cursor: pointer;
+    margin-left:20px;
+    border-bottom: none;
+}
+
+
+g text{
+    cursor: pointer;
+
+}
+
+g text.cls-1:hover{
+   
+    text-decoration: underline;
+}
+
+
+/*Modal styles*/
+
+.artist-info{
+    /*background-color: #ffffb3;*/
+    background-color: rgba(255,255,255,0.9);
+    border: 1px solid black;
+    margin:10px;
+    padding: 15px;
+    width:300px;
+    height:500px;
+    display: none;
+    text-align: left;
+}
+
+.artist-info .name{
+    font-size: 18px;
+    font-weight:bold;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: -30px;
+}
+
+.artist-info .other-themes{
+    font-size: 12px;
+    text-align:left;
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+.artist-info .bio{
+    text-align:left;
+    margin-top:10px;
+}
+
+.artist-info .website{
+    text-transform: uppercase;
+    color: black;
+}
+
+.esc{
+    
+    position: relative;
+    top:-5px;
+    right:10px;
+    text-align: right;
+    font-size:20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/**Artist List Styles**/
+
+.artist-list-container{
+    
+    position:relative;
+    width:100%;
+    display:block;
+    height:auto;
+    
+}
+
+.artist-list{
+    
+    width: 18%;
+    float: left;
+    border-right: 1px solid #000;
+    display:block;
+    position:absolute;
+}
+
+.artist-list h3{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.artist-list p{
+    text-align: left;
+    margin-left:20px;
+    cursor: pointer;
+    
+}
+
+.connections{
+    width: 100%;
+    height:100%;
+    display:block;   
+}
+
+/*SVG styles*/
+
+.cls-1, .cls-41, .cls-49 {
+        font-size: 10px;
+            
+      }
+
+      .cls-1, .cls-23, .cls-41 {
+        fill: #3b342d;
+      }
+
+      .cls-1, .cls-23, .cls-41, .cls-49 {
+        font-family: spot_mono;
+      }
+
+
+
+      .cls-45, .cls-46 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-45 {
+        stroke-width: 2.83px;
+      }
+
+      .cls-46 {
+        stroke-width: 1.42px;
+      }
+
+
+#connections-map{
+
+
+}

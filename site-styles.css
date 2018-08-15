@@ -1,0 +1,27 @@
+@font-face{
+    font-family: Open Sans;
+    src: url(../../../fonts/open-sans/OpenSans-Regular.ttf);
+}
+
+@font-face{
+    font-family: Open Sans Light;
+    src: url(../../../fonts/open-sans/OpenSans-Light.ttf);
+}
+
+@font-face{
+    font-family: Metro;
+    src: url(../../../fonts/fonts-metro/Metro.otf);
+}
+
+body{
+    font-family: Open Sans Light;
+    color: white;
+    background: black;
+    
+}
+
+header{
+    font-family: Metro;
+    color: fuchsia;
+    font-size: 2em;
+}
