@@ -16,17 +16,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Freya_Berkhout_1",
 				"type": "tag",
 				"name": "Digital Ecologies"
 			},
 			{
-				"id": "2",
+				"id": "ID_Freya_Berkhout_2",
 				"type": "tag",
 				"name": "Bioluminescence"
 			},
 			{
-				"id": "3",
+				"id": "ID_Freya_Berkhout_3",
 				"type": "tag",
 				"name": "Voice"
 			}
@@ -53,22 +53,22 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Panja_Göbel_1",
 				"type": "tag",
 				"name": "Computer Vision"
 			},
 			{
-				"id": "2",
+				"id": "ID_Panja_Göbel_2",
 				"type": "tag",
 				"name": "Phantom Limb Syndrome"
 			},
 			{
-				"id": "3",
+				"id": "ID_Panja_Göbel_3",
 				"type": "tag",
 				"name": "Hacking the body"
 			}
 		],
-		"bio": "Panja Göbel invite us to experiment new methods of feeling and thinking with technology through interactive and conceptual artworks. In her installations, the boundaries between humans and machines are blurred. Working across different technologies and disciplines, Panja pairs unlikely elements to create sometimes uncomfortable spaces to invite new conversations. Whilst often commenting on issues of oppression, her pieces contain a ludic element where interaction presents an open space for exploration, to leave the audience with their own interpretation. \n Her previous piece, ‘Face Casino’ interrogated the relationship we have with facial recognition systems by proposing a system of machine masking. Currently, she is exploring phantom syndromes and metaplasms in a project that combines einterpreted Victorian prosthetics, physical computing and an augmented projection which computes the user’s movements. \nBringing a female, alternative perspective to technology, Panja often subverts existing interpretations of computational systems by asking the audience to renegotiate the tangled networks of humans and machines.",
+		"bio": "Panja Göbel invite us to experiment new methods of feeling and thinking with technology through interactive and conceptual artworks. In her installations, the boundaries between humans and machines are blurred. Working across different technologies and disciplines, Panja pairs unlikely elements to create sometimes uncomfortable spaces to invite new conversations. Whilst often commenting on issues of oppression, her pieces contain a ludic element where interaction presents an open space for exploration, to leave the audience with their own interpretation. \n Her previous piece, ‘Face Casino’ interrogated the relationship we have with facial recognition systems by proposing a system of machine masking. Currently, she is exploring phantom syndromes and metaplasms in a project that combines einterpreted Victorian prosthetics, physical computing and an augmented projection which computes the user’s movements. \nBringing a feminist, alternative perspective to technology, Panja often subverts existing interpretations of computational systems by asking the audience to renegotiate the tangled networks of humans and machines.",
 		"project": "...",
 		"website": "http://www.panjapop.com"
 	},
@@ -86,17 +86,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Taoran_Xu_1",
 				"type": "tag",
 				"name": "Immersive experience"
 			},
 			{
-				"id": "2",
+				"id": "ID_Taoran_Xu_2",
 				"type": "tag",
 				"name": "Headscape"
 			},
 			{
-				"id": "3",
+				"id": "ID_Taoran_Xu_3",
 				"type": "tag",
 				"name": "Soundwalk"
 			}
@@ -123,17 +123,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Daniah_Alsaleh_1",
 				"type": "tag",
 				"name": "Conceptualisation"
 			},
 			{
-				"id": "2",
+				"id": "ID_Daniah_Alsaleh_2",
 				"type": "tag",
 				"name": "Generative"
 			},
 			{
-				"id": "3",
+				"id": "ID_Daniah_Alsaleh_3",
 				"type": "tag",
 				"name": "Infinity"
 			}
@@ -183,17 +183,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Eevi_Rutanen_1",
 				"type": "tag",
 				"name": "Craft"
 			},
 			{
-				"id": "2",
+				"id": "ID_Eevi_Rutanen_2",
 				"type": "tag",
 				"name": "Touch"
 			},
 			{
-				"id": "3",
+				"id": "ID_Eevi_Rutanen_3",
 				"type": "tag",
 				"name": "Feminist science"
 			}
@@ -220,17 +220,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Laurie_Carter_1",
 				"type": "tag",
 				"name": "Negative space"
 			},
 			{
-				"id": "2",
+				"id": "ID_Laurie_Carter_2",
 				"type": "tag",
 				"name": "Impermanence"
 			},
 			{
-				"id": "3",
+				"id": "ID_Laurie_Carter_3",
 				"type": "tag",
 				"name": "Generative audiovisual"
 			}
@@ -253,17 +253,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Chris_Speed_1",
 				"type": "tag",
 				"name": "Glitch"
 			},
 			{
-				"id": "2",
+				"id": "ID_Chris_Speed_2",
 				"type": "tag",
 				"name": "Sonification"
 			},
 			{
-				"id": "3",
+				"id": "ID_Chris_Speed_3",
 				"type": "tag",
 				"name": "Shadow"
 			}
@@ -293,17 +293,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Annie_Tådne_1",
 				"type": "tag",
 				"name": "Audiovisual performance"
 			},
 			{
-				"id": "2",
+				"id": "ID_Annie_Tådne_2",
 				"type": "tag",
 				"name": "Sonification"
 			},
 			{
-				"id": "3",
+				"id": "ID_Annie_Tådne_3",
 				"type": "tag",
 				"name": "Machine learning"
 			}
@@ -394,17 +394,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Laura_Dekker_1",
 				"type": "tag",
 				"name": "theory of mind"
 			},
 			{
-				"id": "2",
+				"id": "ID_Laura_Dekker_2",
 				"type": "tag",
 				"name": "biological/machinic"
 			},
 			{
-				"id": "3",
+				"id": "ID_Laura_Dekker_3",
 				"type": "tag",
 				"name": "technology and society"
 			}
@@ -445,17 +445,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Colin_Higgs_1",
 				"type": "tag",
 				"name": "Morphogenesis"
 			},
 			{
-				"id": "2",
+				"id": "ID_Colin_Higgs_2",
 				"type": "tag",
 				"name": "Gestures"
 			},
 			{
-				"id": "3",
+				"id": "ID_Colin_Higgs_3",
 				"type": "tag",
 				"name": "Genetic Algorithms"
 			}
@@ -483,7 +483,7 @@
 		],
 		"tag": [
 		],
-		"bio": "Valerio Viperino is not an artist, but would like to be one. He is from Rome, Italy - more precisely from Velletri, a lovely town south of the capital city. /n Through the design of apparently long-winded algorithmic processes, his work aims to explore the relationship and the expectations people have towards technology, productivity and usefulness. \n His projects are driven by investigating the way in which technological objects can drive a feeling of estrangement and the potential to make them less serious and more accessible through art. For this reason, his research also revolves around viewing data as a cultural object instead of a scientific one. \n His practice is inspired by the philosophy of Luciano Floridi. \n Most of his projects result in interactive computational artefacts, taking the form of machines or algorithms. \n In 2017, he won a Digital Design Award in the Illustration Category, thanks to a series of data visualisations of the car crashes recorded in the city of Rome.",
+		"bio": "Valerio Viperino is not an artist, but would like to be one. He is from Rome, Italy - more precisely from Velletri, a lovely town south of the capital city. Through the design of apparently long-winded algorithmic processes, his work aims to explore the relationship and the expectations people have towards technology, productivity and usefulness. \n His projects are driven by investigating the way in which technological objects can drive a feeling of estrangement and the potential to make them less serious and more accessible through art. For this reason, his research also revolves around viewing data as a cultural object instead of a scientific one. \n His practice is inspired by the philosophy of Luciano Floridi. \n Most of his projects result in interactive computational artefacts, taking the form of machines or algorithms. \n In 2017, he won a Digital Design Award in the Illustration Category, thanks to a series of data visualisations of the car crashes recorded in the city of Rome.",
 		"project": "...",
 		"website": "https://valerioviperino.me",
         "blog": "https://vvzen.it"
@@ -506,17 +506,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Geeta_Roopnarine_1",
 				"type": "tag",
 				"name": "Brain connectivity"
 			},
 			{
-				"id": "2",
+				"id": "ID_Geeta_Roopnarine_2",
 				"type": "tag",
 				"name": "Architectural space"
 			},
 			{
-				"id": "3",
+				"id": "ID_Geeta_Roopnarine_3",
 				"type": "tag",
 				"name": "Non-human agency"
 			}
@@ -543,17 +543,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Jeremie_Wenger_1",
 				"type": "tag",
 				"name": "Literature & constraints"
 			},
 			{
-				"id": "2",
+				"id": "ID_Jeremie_Wenger_2",
 				"type": "tag",
 				"name": "Generative processes"
 			},
 			{
-				"id": "3",
+				"id": "ID_Jeremie_Wenger_3",
 				"type": "tag",
 				"name": "Machine Learning"
 			}
@@ -581,17 +581,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Rebecca_Aston_1",
 				"type": "tag",
 				"name": "Post-colonialism"
 			},
 			{
-				"id": "2",
+				"id": "ID_Rebecca_Aston_2",
 				"type": "tag",
 				"name": "Material Culture"
 			},
 			{
-				"id": "3",
+				"id": "ID_Rebecca_Aston_3",
 				"type": "tag",
 				"name": "Simulation"
 			}
@@ -618,17 +618,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Laura_Subirats_1",
 				"type": "tag",
 				"name": "Archive"
 			},
 			{
-				"id": "2",
+				"id": "ID_Laura_Subirats_2",
 				"type": "tag",
 				"name": "Future"
 			},
 			{
-				"id": "3",
+				"id": "ID_Laura_Subirats_3",
 				"type": "tag",
 				"name": "Machine Learning"
 			}
@@ -648,17 +648,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Isaac_Clarke_1",
 				"type": "tag",
 				"name": "Falling"
 			},
 			{
-				"id": "2",
+				"id": "ID_Isaac_Clarke_2",
 				"type": "tag",
 				"name": "Intimate-Detour"
 			},
 			{
-				"id": "3",
+				"id": "ID_Isaac_Clarke_3",
 				"type": "tag",
 				"name": "Pathfinding"
 			}
@@ -689,17 +689,17 @@
             }
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Helena_Wee_1",
 				"type": "tag",
 				"name": "generative 3D art"
 			},
 			{
-				"id": "2",
+				"id": "ID_Helena_Wee_2",
 				"type": "tag",
 				"name": "landscape painting"
 			},
 			{
-				"id": "3",
+				"id": "ID_Helena_Wee_3",
 				"type": "tag",
 				"name": "Chinese mythology"
 			}
@@ -724,17 +724,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Megan_Bates_1",
 				"type": "tag",
 				"name": "environmentalism"
 			},
 			{
-				"id": "2",
+				"id": "ID_Megan_Bates_2",
 				"type": "tag",
 				"name": "digital/biological collaborations"
 			},
 			{
-				"id": "3",
+				"id": "ID_Megan_Bates_3",
 				"type": "tag",
 				"name": "colour"
 			}
@@ -776,17 +776,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_James_Tregaskis_1",
 				"type": "tag",
 				"name": "The writings of William S Burroughs"
 			},
 			{
-				"id": "2",
+				"id": "ID_James_Tregaskis_2",
 				"type": "tag",
 				"name": "Dystopia"
 			},
 			{
-				"id": "3",
+				"id": "ID_James_Tregaskis_3",
 				"type": "tag",
 				"name": "Transhumanism (Cults)"
 			}
@@ -801,30 +801,30 @@
 		"type": "artist",
 		"category": [{
 				"id": "1",
-				"theme": "SONIC"
+				"theme": "SIGNS AND SIGNALS"
 			},
 			{
 				"id": "2",
-				"theme": "SIGNS AND SIGNALS"
+				"theme": "SONIC"
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Luke_Demarest_1",
 				"type": "tag",
 				"name": "Information Theory"
 			},
 			{
-				"id": "2",
+				"id": "ID_Luke_Demarest_2",
 				"type": "tag",
-				"name": "Quantum Computing"
+				"name": "Representation"
 			},
 			{
-				"id": "3",
+				"id": "ID_Luke_Demarest_3",
 				"type": "tag",
-				"name": "Symbolism"
+				"name": "Free Culture"
 			}
 		],
-		"bio": "Cat ommoluptatat que sa volore, consequiant et porerup tasped utet fugia sequam iur? Um eos volum res solorit quasime nimusamet fugia si quos dolluptatem faci sunt que molest voluptate etus ratis ullaut quam restisciis vere cone et acea quaspiet volorit eos ut reresto beatum aut praesti oreces ditiur ad endam volupta tustiisquam essimolupta et voluptur? Quia cumquiam.",
+		"bio": "Luke Demarest is a wryly ambivalent data-vagabond with a background in sculpture and software. His recent studies look at the notion of 'pure' (non-material) data and its material culture and language conflations. Luke was an Engineer at Rosetta Stone (2014-2016) and an Artist in Residence at the American Underground (2014). Recent exhibitions include 'Expanding Systems' at the Art in Perpetuity Trust in London (2018) and 'Aibohphobia and the Reifier's Schadenfreude' at LibrePlanet in Boston and at the Carrack in Durham (2017).",
 		"project": "...",
 		"website": "http://demare.st"
 	},
@@ -842,17 +842,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Danny_Keig_1",
 				"type": "tag",
 				"name": "Ecology"
 			},
 			{
-				"id": "2",
+				"id": "ID_Danny_Keig_2",
 				"type": "tag",
 				"name": "Emergence"
 			},
 			{
-				"id": "3",
+				"id": "ID_Danny_Keig_3",
 				"type": "tag",
 				"name": "Networks"
 			}
@@ -883,17 +883,17 @@
 			}
 		],
 		"tag": [{
-				"id": "1",
+				"id": "ID_Julia_Makivic_1",
 				"type": "tag",
 				"name": "Desire"
 			},
 			{
-				"id": "2",
+				"id": "ID_Julia_Makivic_2",
 				"type": "tag",
 				"name": "Nostalgia"
 			},
 			{
-				"id": "3",
+				"id": "ID_Julia_Makivic_3",
 				"type": "tag",
 				"name": "Narrative"
 			}
@@ -918,17 +918,17 @@
 			}
 		],
 		"tag": [{
-			"id": "1",
+			"id": "ID_Elias_Berkhout_1",
 			"type": "tag",
 			"name": "Postcolonial computing"
 		},
 		{
-			"id": "2",
+			"id": "ID_Elias_Berkhout_2",
 			"type": "tag",
 			"name": "Audio visualisation"
 		},
 		{
-			"id": "3",
+			"id": "ID_Elias_Berkhout_3",
 			"type": "tag",
 			"name": "Real-time data"
 		}
@@ -979,17 +979,17 @@
 		}
 		],
 		"tag": [{
-			"id": "1",
+			"id": "ID_Joseph_Rodrigues_Marsh_1",
 			"type": "tag",
 			"name": "Simulation"
 		},
 		{
-			"id": "2",
+			"id": "ID_Joseph_Rodrigues_Marsh_2",
 			"type": "tag",
 			"name": "Soft-body Dynamics"
 		},
 		{
-			"id": "3",
+			"id": "ID_Joseph_Rodrigues_Marsh_3",
 			"type": "tag",
 			"name": "Artificial"
 		}
@@ -1030,17 +1030,17 @@
 		}
 		],
 		"tag": [{
-			"id": "1",
+			"id": "ID_Sabrina_Recoules_Quang_1",
 			"type": "tag",
 			"name": "Entangled"
 		},
 		{
-			"id": "2",
+			"id": "ID_Sabrina_Recoules_Quang_2",
 			"type": "tag",
 			"name": "Mask"
 		},
 		{
-			"id": "3",
+			"id": "ID_Sabrina_Recoules_Quang_3",
 			"type": "tag",
 			"name": "Uncanny"
 		}
@@ -1061,17 +1061,17 @@
 		}
 		],
 		"tag": [{
-			"id": "1",
+			"id": "ID_David_Williams_1",
 			"type": "tag",
 			"name": "Plasmodial"
 		},
 		{
-			"id": "2",
+			"id": "ID_David_Williams_2",
 			"type": "tag",
 			"name": "Supernormality"
 		},
 		{
-			"id": "3",
+			"id": "ID_David_Williams_3",
 			"type": "tag",
 			"name": "Material semiotics"
 		}
@@ -1144,17 +1144,17 @@
 		}
 		],
 		"tag": [{
-			"id": "1",
+			"id": "ID_Teodora_Fartan_1",
 			"type": "tag",
 			"name": "light"
 		},
 		{
-			"id": "2",
+			"id": "ID_Teodora_Fartan_2",
 			"type": "tag",
 			"name": "kinetic"
 		},
 		{
-			"id": "3",
+			"id": "ID_Teodora_Fartan_3",
 			"type": "tag",
 			"name": "ethereal"
 		}
@@ -1189,15 +1189,15 @@
 		"name": "Samuel Ludford",
 		"type": "artist",
 		"category": [{
-			"id": "1",
+			"id": "ID_Laura_Traver_1",
 			"theme": "DIGITAL ECOLOGIES"
 		},
 		{
-			"id": "2",
+			"id": "ID_Laura_Traver_2",
 			"theme": "SIGNS AND SIGNALS"
 		},
 		{
-			"id": "3",
+			"id": "ID_Laura_Traver_3",
 			"theme": "DISRUPTING FORMS"
 		}
 		],
