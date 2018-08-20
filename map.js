@@ -15,6 +15,8 @@ $(document).ready(function(){
             var tags = "";
             for(var i = 0; i < val.tag.length; i++){
                 tags += "<div class='other-themes'>"+val.tag[i].name+"</div>"
+                $("#tag-list").append("<p class='personal-theme'>"+val.tag[i].name+"</p>");
+
             }
 
 
@@ -36,9 +38,6 @@ $(document).ready(function(){
             html: info_panels.join("")
         }).appendTo(".artists");
 
-        // by default hide all modals
-        // $(".artist-info").css("display", "none");
-
         // make current artist's modal visible
         $("#Names g").click(function(){
             var _id = $(this).attr("id");
@@ -47,8 +46,6 @@ $(document).ready(function(){
             $("#ID_"+_id).css({
                 "display":"block",
                 "position":"fixed",
-                // "left":"50%",
-                // "margin-left":"-212px",
                 "left":"18%",
                 "margin-left":0,
                 "top":"10%"

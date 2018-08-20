@@ -11,28 +11,55 @@ $(document).ready(function(){
             "class":"listed-artist", html: artists.join("")
         }).appendTo(".artist-list");
 
-        $(".artist,.tag").click(function(){
-            $(".artist-info").css("display", "none");
+        $(".category,.artist,.tag").click(function(){
 
-            var string_id = $(this).attr("id");
-            var panel_id = string_id.substr(7);
+            // TODO:
+            // categories (map and list) triggers category modal
+            
+            var string_id = $(this).attr("id"); //art_ID_SPECULATIVE
+            var panel_id = string_id.substr(7); //SPECULATIVE
+            
+            // hide all artist modals
+            $(".artist-info").css("display", "none");
+            // show selected artist modal
             $("#"+"ID_"+panel_id).css({"display":"block", "position":"fixed","left":"18%", "margin-left":"0", "top":"10%"});
             // $("#"+"ID_"+panel_id).css({"display":"block", "position":"fixed","left":"50%","margin-left":"-212px", "top":"10%"});
-            
-            // reset circles and highlight selected
-            $("circle").css({'fill':'white',"stroke":'#ccc'});
-            $("circle#"+string_id).css({'fill':'black','stroke':'gray'});
-            // reset lins and highlight selected
-            $("#connections-map line").css({"stroke": "black","opacity":"1","stroke-width": 1})
-            $("line[source='"+string_id+"'").css({"stroke": "black","opacity":"1","stroke-width": 1})
 
-            // artist list
+            // reset all lines
+            $("#connections-map line").css({"stroke": "gray","opacity":"1","stroke-width": 1})
+            // highlight lines associated with selected artist
+            $("line[source='"+string_id+"'").css({"stroke": "black","opacity":"1","stroke-width": 2})
+            $("line[target='"+string_id+"'").css({"stroke": "black","opacity":"1","stroke-width": 2})
+
+            
+            // reset all circles
+            $("circle").css({'fill':'white',"stroke":'#ccc'});
+
+            // highlight associated entities circle
+            for(var i = 0; i < dataset.edges.length; i++){
+                if("art_" + dataset.edges[i].source.id == string_id || "art_" + dataset.edges[i].target.id == string_id){
+                    $("circle#art_"+dataset.edges[i].target.id).css({'fill':'darkgray','stroke':'black'});
+                    $("circle#art_"+dataset.edges[i].source.id).css({'fill':'darkgray','stroke':'black'});
+
+                } 
+            }
+
+            // highlight selected artist's circle
+            $("circle#"+string_id).css({'fill':'black','stroke':'gray'});
+
+            // reset all listed artists
             $(".artist-list p").css({"text-decoration":"none"})
+            // highlight selected artist in the list
             $(".artist-list #"+string_id).css({"text-decoration":"underline"})
             
-            // cl = $("line[source='"+string_id+"'").attr("target");
-            // console.log(cl);
-            // $("circle#"+cl[0]).css({'fill':'gray','stroke':'gray'});
+            // open the modal for the artist of the tag
+            if($(this).hasClass("tag")){
+                var tagArtist =  panel_id.substring(0, panel_id.length - 2);
+                console.log(tagArtist);
+                $(".artist-list #art_ID_" + tagArtist).css({"text-decoration":"underline"})
+                $("#"+"ID_"+tagArtist).css({"display":"block", "position":"fixed","left":"18%", "margin-left":"0", "top":"10%"});
+
+            }
 
         });
 
