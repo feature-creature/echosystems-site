@@ -197,6 +197,8 @@ p.artist{
     width: 18%;
     border-left: 1px solid #000;
     display:block;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .theme-nav h3{
@@ -235,6 +237,7 @@ g text.cls-1:hover{
     height:500px;
     display: none;
     text-align: left;
+    overflow-y: scroll;
 }
 
 .artist-info .name{
@@ -291,6 +294,8 @@ g text.cls-1:hover{
     border-right: 1px solid #000;
     display:block;
     position:absolute;
+    height: 100%; 
+    overflow-y: scroll;
 }
 
 .artist-list h3{
@@ -343,7 +348,8 @@ g text.cls-1:hover{
       }
 
 
-#connections-map{
+#tag-list p{
+    text-transform: uppercase;
 
 
 }
