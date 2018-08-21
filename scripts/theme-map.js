@@ -19,8 +19,8 @@
 
 
 			// json dataset
-			d3.json("../names.json", function(data){
-
+			d3.json("names.json", function(error, data){
+				console.log(error);
 				// artist nodes
 				for(var i = 0; i < data.length; i++){
 					dataset.nodes.push(data[i]);

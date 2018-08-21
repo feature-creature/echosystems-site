@@ -23,6 +23,17 @@ $(document).ready(function(){
 
             }
 
+            var socials = "";
+            for(var i = 0; i < val.social.length; i++){
+                socials += "<br><br><a class='website' target='_blank' href='"+Object.values(val.social[i])[0]+"'>"+Object.keys(val.social[i])[0]+"</a>";
+            }
+
+            var websiteLink = "";
+
+            if(val.website != ""){
+                websiteLink = "<a class='website' target='_blank' href='"+val.website+"'>Website</a>";
+            }
+
 
             info_panels.push(
                 "<div id='"
@@ -33,7 +44,10 @@ $(document).ready(function(){
                 +"<div class='bio'>"
                 +val.bio+"</div>"
                 // +"<div class='project'>"+val.project+"</div>"
-                +"<a class='website' href='"+val.website+"'>Website</a></div></div>");
+                +websiteLink
+                +socials
+                +"</div></div>"
+                );
         });
 
         // append html modals to artists list
