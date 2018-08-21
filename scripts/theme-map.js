@@ -5,7 +5,7 @@
 					{id: "ID_INTERFACING_AND_PLAY", name: "INTERFACING / PLAY", type: "category"},
 					{id: "ID_AUTOMATA", name: "AUTOMATA", type: "category"},
 					{id: "ID_DIGITAL_ECOLOGIES", name: "DIGITAL ECOLOGIES", type: "category"},
-					{id: "ID_SPECULATIVE", name: "SPECULATIVE", type: "category"},
+					{id: "ID_SPECULATION", name: "SPECULATION", type: "category"},
 					{id: "ID_EMBODIMENT", name: "EMBODIMENT", type: "category"},
 					{id: "ID_PERFORMANCE", name: "PERFORMANCE", type: "category"},
 					{id: "ID_SONIC", name: "SONIC", type: "category"},
@@ -13,7 +13,6 @@
 					{id: "ID_SIGNS_AND_SIGNALS", name: "SIGNS AND SIGNALS", type: "category"},
 					{id: "ID_DISRUPTING_FORMS", name: "DISRUPTING FORMS", type: "category"},
 					{id: "ID_WITNESSING_AND_INTERVENING", name: "WITNESSING / INTERVENING", type: "category"},
-
 				],
 				edges : []
 			};

@@ -1,3 +1,7 @@
+// TODO: add in social details to modals
+// make sure physical map triggers everything else
+// make sure json is complete and updated
+
 $(document).ready(function(){
 
     // load json data
@@ -9,13 +13,13 @@ $(document).ready(function(){
 
             var categories = "";
             for(var i = 0; i < val.category.length; i++){
-                categories += "<div class='other-themes'>"+val.category[i].theme+"</div>"
+                categories += "<div class='category other-themes'>"+val.category[i].theme+"</div>"
             }
 
             var tags = "";
             for(var i = 0; i < val.tag.length; i++){
-                tags += "<div class='other-themes'>"+val.tag[i].name+"</div>"
-                $("#tag-list").append("<p class='personal-theme'>"+val.tag[i].name+"</p>");
+                tags += "<div class='tag other-themes'>"+val.tag[i].name+"</div>"
+                $("#tag-list").append("<p id='art_"+ val.tag[i].id +"' class='tag personal-theme'>"+val.tag[i].name+"</p>");
 
             }
 
@@ -41,7 +45,6 @@ $(document).ready(function(){
         // make current artist's modal visible
         $("#Names g").click(function(){
             var _id = $(this).attr("id");
-            console.log(_id);
             $(".artist-info").css("display", "none");
             $("#ID_"+_id).css({
                 "display":"block",
@@ -61,15 +64,19 @@ $(document).ready(function(){
         });
 
         // hide the current visible modal
-        $(".esc").click(function(){
+        $(".artist-info .esc").click(function(){
             $(".artist-info").css("display", "none");
         });
 
-        // example theme highlighting on map
-        $(".theme_1").click(function(){
-            $(".theme_1").css("color", "#ff000");
-            $("g text").css("fill","#ff0000");
+        $(".category-info .esc").click(function(){
+            $(".category-info").css("display", "none");
         });
+
+        // example theme highlighting on map
+        // $(".theme_1").click(function(){
+        //     $(".theme_1").css("color", "#ff000");
+        //     $("g text").css("fill","#ff0000");
+        // });
     });
 });
 

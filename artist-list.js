@@ -2,9 +2,11 @@ $(document).ready(function(){
 
     $.getJSON("names.json", function(data){
         var artists = [];
+        // var tags = [];
 
         $.each(data, function(key, val){
             artists.push("<p id='art_"+val.id+"' class='artist'>"+val.name+"</p>");
+            // console.log(val.tag.length)
         });
 
         $("<div/>", {
@@ -19,12 +21,6 @@ $(document).ready(function(){
             var string_id = $(this).attr("id"); //art_ID_SPECULATIVE
             var panel_id = string_id.substr(7); //SPECULATIVE
             
-            // hide all artist modals
-            $(".artist-info").css("display", "none");
-            // show selected artist modal
-            $("#"+"ID_"+panel_id).css({"display":"block", "position":"fixed","left":"18%", "margin-left":"0", "top":"10%"});
-            // $("#"+"ID_"+panel_id).css({"display":"block", "position":"fixed","left":"50%","margin-left":"-212px", "top":"10%"});
-
             // reset all lines
             $("#connections-map line").css({"stroke": "gray","opacity":"1","stroke-width": 1})
             // highlight lines associated with selected artist
@@ -44,6 +40,8 @@ $(document).ready(function(){
                 } 
             }
 
+
+
             // highlight selected artist's circle
             $("circle#"+string_id).css({'fill':'black','stroke':'gray'});
 
@@ -52,13 +50,34 @@ $(document).ready(function(){
             // highlight selected artist in the list
             $(".artist-list #"+string_id).css({"text-decoration":"underline"})
             
+
+            // hide all artist modals
+            $(".artist-info").css("display", "none");
+            // show selected artist modal
+            if($(this).hasClass("artist")){
+                $("#"+"ID_"+panel_id).css({"display":"block", "position":"fixed","left":"18%", "margin-left":"0", "top":"10%"});
+                // $("#"+"ID_"+panel_id).css({"display":"block", "position":"fixed","left":"50%","margin-left":"-212px", "top":"10%"});
+            }
+            // hide all category modals
+            $("#category-list p").css({"text-decoration":"none"});
+
+            $(".category-info").css("display","none");
+            if($(this).hasClass("category")){
+                $("#"+"ID_"+panel_id).css({"display":"block", "position":"fixed","right":"18%", "margin-right":"0", "top":"10%"});
+                console.log(string_id);
+                $("#category-list #"+string_id).css({"text-decoration":"underline"});
+            }
+
+
+            $("#tag-list p").css({"text-decoration":"none"});
+
             // open the modal for the artist of the tag
             if($(this).hasClass("tag")){
                 var tagArtist =  panel_id.substring(0, panel_id.length - 2);
                 console.log(tagArtist);
                 $(".artist-list #art_ID_" + tagArtist).css({"text-decoration":"underline"})
                 $("#"+"ID_"+tagArtist).css({"display":"block", "position":"fixed","left":"18%", "margin-left":"0", "top":"10%"});
-
+                $("#tag-list #"+string_id).css({"text-decoration":"underline"});
             }
 
         });

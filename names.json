@@ -8,7 +8,7 @@
 			},
 			{
 				"id": "2",
-				"theme": "SPECULATIVE"
+				"theme": "SPECULATION"
 			},
 			{
 				"id": "3",
@@ -115,7 +115,7 @@
 			},
 			{
 				"id": "2",
-				"theme": "SPECULATIVE"
+				"theme": "SPECULATION"
 			},
 			{
 				"id": "3",
@@ -175,7 +175,7 @@
 			},
 			{
 				"id": "2",
-				"theme": "SPECULATIVE"
+				"theme": "SPECULATION"
 			},
 			{
 				"id": "3",
@@ -319,7 +319,7 @@
 		"type": "artist",
 		"category": [{
 				"id": "1",
-				"theme": "SPECULATIVE"
+				"theme": "SPECULATION"
 			},
 			{
 				"id": "2",
@@ -330,7 +330,21 @@
 				"theme": "PERFORMANCE"
 			}
 		],
-		"tag": [
+		"tag": [{
+				"id": "ID_Friendred_1",
+				"type": "tag",
+				"name": "Embodiment"
+			},
+			{
+				"id": "ID_Friendred_2",
+				"type": "tag",
+				"name": "Skin-Awareness"
+			},
+			{
+				"id": "ID_Friendred_3",
+				"type": "tag",
+				"name": "Phenomenology"
+			}
 		],
 		"bio": "Friendred is an installation and visual artist currently based in London. In early 2012 he started creating abstract visual images, most of which followed themes of humanity, exploring dematerialised existence. Inspired by pop culture and the vaporwave aesthetic, Friendred has formed his own striking artistic style, traversing spectrums that are at once unorthodox, counterintuitive and deeply affective. \n 'The best way to predict the future is to invent it.' - Alan Kay in 1971. Since 2015, Friendred has worked combining his visual sensibility with sound in interactive installation and performance settings. His work is now focused on a dialogue between artistic form and technological mediation. He is experimenting to bridge his own aesthetic between embodiment, phenomenology and sensory environments. Friendred has been focused on the intersection of arts and technology for the past 4 years. His recent work, 'Baptism/digital trance' bridged the conversation between body language and algorithmic machine. \n Friendred’s art practice is to break down the boundaries of parametric space and explore immersive forms of observation through exploring the relationship between human body and machine. He is keen to collaborate with pioneering artists who are working across other disciplines.",
 		"project": "...",
@@ -681,7 +695,7 @@
 			},
 			{
 				"id": "3",
-				"theme": "SPECULATIVE"
+				"theme": "SPECULATION"
 			},
             {
                 "id": "3",
@@ -720,7 +734,7 @@
 			},
 			{
 				"id": "2",
-				"theme": "SPECULATIVE"
+				"theme": "SPECULATION"
 			}
 		],
 		"tag": [{
@@ -753,7 +767,7 @@
 			},
 			{
 				"id": "2",
-				"theme": "SPECULATIVE"
+				"theme": "SPECULATION"
 			}
 		],
 		"tag": [
@@ -838,7 +852,7 @@
 			},
 			{
 				"id": "2",
-				"theme": "SPECULATIVE"
+				"theme": "SPECULATION"
 			}
 		],
 		"tag": [{
@@ -875,7 +889,7 @@
 			},
 			{
 				"id": "3",
-				"theme": "SPECULATIVE"
+				"theme": "SPECULATION"
 			},
 			{
 				"id": "4",
@@ -1132,7 +1146,7 @@
 		},
 		{
 			"id": "2",
-			"theme": "SPECULATIVE"
+			"theme": "SPECULATION"
 		},
 		{
 			"id": "3",
