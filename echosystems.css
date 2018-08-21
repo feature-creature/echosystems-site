@@ -69,7 +69,7 @@ p.artist{
     z-index: 100;
             
 }
-
+/*
 .top-nav a{
     display:inline;
     background-color: #000;
@@ -83,7 +83,7 @@ p.artist{
     right: 5px;
     
     
-}
+}*/
 
 .top-nav h1, .bottom-nav h1{
     font-size: 1em;
@@ -116,6 +116,9 @@ p.artist{
 
 
 .bottom-nav a{
+    color: black;
+}
+    /*
     display:inline;
     background-color: #000;
     color:#fff;
@@ -129,7 +132,7 @@ p.artist{
     
     
 }
-
+*/
 
 .echosystems-content{
     margin-top:50px;
@@ -198,8 +201,9 @@ p.artist{
     width: 18%;
     border-left: 1px solid #000;
     display:block;
-    height: 100%;
-    overflow-y: scroll;
+    /*height: 100%;*/
+    padding-bottom: 200px;
+    /*overflow-y: scroll;*/
 }
 
 .theme-nav h3{
@@ -258,7 +262,7 @@ g text.cls-1:hover{
 
 .artist-info .bio{
     text-align:left;
-    margin-top:10px;
+    margin:15px 0;
 }
 
 .artist-info .website{
@@ -340,8 +344,8 @@ g text.cls-1:hover{
     border-right: 1px solid #000;
     display:block;
     position:absolute;
-    height: 100%; 
-    overflow-y: scroll;
+    /*height: 100%; */
+    /*overflow-y: scroll;*/
 }
 
 .artist-list h3{
@@ -397,5 +401,12 @@ g text.cls-1:hover{
 #tag-list p{
     text-transform: uppercase;
 
+}
 
+ul, ol{
+    list-style: none;
+}
+
+#physical-map:hover, #connections-map:hover, #info-map:hover{
+    cursor: pointer;
 }
