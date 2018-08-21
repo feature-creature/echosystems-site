@@ -20,7 +20,7 @@
 
 			// json dataset
 			d3.json("names.json", function(error, data){
-				console.log(error);
+				// console.log(error);
 				// artist nodes
 				for(var i = 0; i < data.length; i++){
 					dataset.nodes.push(data[i]);
@@ -75,9 +75,9 @@
 					.attr("id","connections-map")
 					.attr("width", w)
 					.attr("height", h)
-
 					.call(d3.behavior.zoom().on("zoom", function () {
 						svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
+						
 					}))
     				.append('g');
 				

@@ -144,8 +144,10 @@
 		],
 		"bio": "Daniah Alsaleh is a London based artist from Riyadh, Saudi Arabia. She exhibits in the Middle East and recently has crossed platforms from painting to coding. She incorporates computation with her art practice by using code to produce generative art pieces and interactive installations. Daniah has recently been investigating alienation and the unfamiliar, exploring the process of ‘othering’ in the world of technology, and the relationship between human and nonhuman agencies.",
 		"project": "...",
-		"website": "http://www.instagram.com/daniah_alsaleh/",
-		"social":[]
+		"website": "",
+		"social":[
+			{"instagram": "http://www.instagram.com/daniah_alsaleh/"}
+		]
 	},
 	{
 		"id": "ID_Amit_Segall",
@@ -245,6 +247,7 @@
 		],
 		"bio": "With a background as a classical pianist, Laurie Carter began composing music from an early age. As an undergraduate student, he experimented with electro-acoustic composition, inspired greatly by the generative, change-based techniques adopted by composers such as John Cage, Steve Reich and Brian Eno. Always more comfortable thinking of his compositions as a series of morphing shapes, colours and textures, Laurie has added a generative visual experience to his live performance in order to further immerse his audience. The beauty of imperfection and natural phenomena such as decay influence his aesthetic, allowing his audiovisual work to evolve slowly out of his control, accepting the inevitability of impermanence.",
 		"project": "...",
+		"website":"",
 		"social":[
 			{"instagram": "https://www.instagram.com/lauriecarter_glenneth/"}
 		]
@@ -366,7 +369,7 @@
 		"website": "http://friendred.me/",
 		"social":[
         	{"instagram": "https://www.instagram.com/friend_red/"},
-        	{"twitter": "https://twitter.com/friendred"}
+        	{"twitter": "https://twitter.com/_friendred"}
 		]
 	},
 	{
@@ -508,9 +511,9 @@
 		],
 		"bio": "Valerio Viperino is not an artist, but would like to be one. He is from Rome, Italy - more precisely from Velletri, a lovely town south of the capital city. Through the design of apparently long-winded algorithmic processes, his work aims to explore the relationship and the expectations people have towards technology, productivity and usefulness. \n His projects are driven by investigating the way in which technological objects can drive a feeling of estrangement and the potential to make them less serious and more accessible through art. For this reason, his research also revolves around viewing data as a cultural object instead of a scientific one. \n His practice is inspired by the philosophy of Luciano Floridi. \n Most of his projects result in interactive computational artefacts, taking the form of machines or algorithms. \n In 2017, he won a Digital Design Award in the Illustration Category, thanks to a series of data visualisations of the car crashes recorded in the city of Rome.",
 		"project": "...",
-		"website": "https://valerioviperino.me",
+		"website": "http://valerioviperino.me",
 		"social":[
-        	{"blog": "https://vvzen.it"}
+        	{"blog": "http://vvzen.it"}
 		]
 	},
 	{
@@ -548,8 +551,9 @@
 		],
 		"bio": "Geeta Roopnarine was born in Trinidad and Tobago and lives in London and Athens. Before studying Fine Arts (sculpture) at the University of Athens, she worked as a forensic scientist. Geeta’s work is interdisciplinary and spans the intersection of art, science and technology. She is interested in the idea of memory and how it transforms, the interconnectedness of things and the heterotopic ‘otherness’ of space. \n Her history includes diverse cultures such as Indian, Trinidadian and Greek and she draws upon the images, myths and philosophy of these backgrounds to create works that come together in an unstable equilibrium. Geeta’s present work is informed by neuroscience and uses the transformation of data to pose questions about the mind-body ‘dichotomy’ and the architectural spaces we inhabit in this world. Earlier works articulated environmental issues that arose from the pollution of plastics in the ocean and the enhancement of brain connectivity in older people. She has exhibited internationally in Athens, London and New York.",
 		"project": "...",
+		"website":"",
 		"social":[
-			{"email": "ggroopnarine[at]gmail.com"}
+			{"email": "mailto:ggroopnarine[at]gmail.com"}
 		]
 	},
 	{
@@ -587,7 +591,7 @@
 		],
 		"bio": "Jérémie Wenger is a writer from Switzerland. Apart from languages and literatures, both classical and modern, his interests lie in philosophy, music, and, more recently, (geo)politics and economics, albeit reluctantly so. \n His practice seeks to find a path away from sterile self-reference, inner conflicts and the bitter intricacies of exile, while attempting to forge a personal style and a renewed interplay between systematic thought and intuition. \n The discovery of computation and the integration of those techniques into his writing practice is an important event in Jérémie's trajectory, which could help develop some aspects of his former practice: an interest in constrained literary forms (inherited from the Oulipo and 20th century experimental music), as well as a strong personal and aesthetic connection with modernism.",
 		"project": "...",
-		"website": "http://www.jcw.persona.co",
+		"website": "http://jcw.persona.co",
 		"social":[
         	{"github": "http://www.github.com/jchwenger"}
 		]
@@ -697,10 +701,10 @@
 		],
 		"bio": "Isaac Clarke is an artist and programmer, travelling back and forth between Leeds and London. His ongoing study of deserts at NL’CAO (2013) in New Mexico investigates the desert landscape as a place of abstraction and projection. Isaac is also the founder of The Institute of Jamais Vu (2011-2014) in London. \n His last artwork explores the presence of the dead as both political allies and imagined community through the studies of woven, knotted, and labyrinthine forms. \n Recent Exhibitions include ‘I’ve Been Out Walking’ at Serf in Leeds (2017), ‘General Studies’ at Outpost in Norwich (2016), and ‘Wake’ at Pas Le Temps in Nantes (2015).",
 		"project": "...",
+		"website":"",
 		"social":[
-			{"email": "isaac@ishimura.uk"}
-		],
-		"social":[]
+			{"email": "mailto:isaac@ishimura.uk"}
+		]
 	},
 	{
 		"id": "ID_Helena_Wee",
@@ -1005,7 +1009,7 @@
 		"project": "...",
 		"website": "http://www.tin.fyi",
 		"social":[
-			{"github": "https://tingeber.github.io/uniblog/"}
+			{"blog": "https://tingeber.github.io/uniblog/"}
 		]
 	},
 	{
@@ -1098,7 +1102,7 @@
 		],
 		"bio": "Sabrina Recoules Quang is a French Vietnamese puppeteer based in London who studied computational art at Goldsmiths. She produces sensorial and sound experiments with crafted electronic artefacts, masks and automata using computer graphics, computer vision and natural language processing. Her works challenge viewers about their perception of the Other whether it is another human or one of the network interfaces, all entangled into ubiquitous computing. \n Her responsive installations have been exhibited at the Ugly Duck for the collective XAP Cross Arts Projects (2017), and at 'V&A Digital Futures'(2018). \n From next year, she will collaborate with smart textile designers at the Royal College of Arts.",
 		"project": "...",
-		"website": "https://www.theatredu1k.com",
+		"website": "http://www.theatredu1k.com",
 		"social":[
 			{"instagram": "https://www.instagram.com/sabrina_theatredu1k"},
 			{"vimeo": "https://www.vimeo.com/234081110"}
@@ -1224,7 +1228,7 @@
 		"website": "http://www.lauratraver.com/",
 		"social":[
 			{"youtube": "http://www.tinyurl.com/lauratraver"},
-			{"email": "LNTraver@hotmail.com"}
+			{"email": "mailto:LNTraver@hotmail.com"}
 		]
 	},
 	{

@@ -24,8 +24,10 @@ $(document).ready(function(){
             }
 
             var socials = "";
+            var targeted = "";
             for(var i = 0; i < val.social.length; i++){
-                socials += "<br><br><a class='website' target='_blank' href='"+Object.values(val.social[i])[0]+"'>"+Object.keys(val.social[i])[0]+"</a>";
+                Object.keys(val.social[i])[0] == "email" ? targeted = "" : targeted = "_blank";
+                socials += "<br><br><a class='website' target='"+targeted+"' href='"+Object.values(val.social[i])[0]+"'>"+Object.keys(val.social[i])[0]+"</a>";
             }
 
             var websiteLink = "";
