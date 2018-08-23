@@ -20,7 +20,6 @@
 
 			// json dataset
 			d3.json("names.json", function(error, data){
-				// console.log(error);
 				// artist nodes
 				for(var i = 0; i < data.length; i++){
 					dataset.nodes.push(data[i]);
@@ -28,6 +27,7 @@
 
 				// artist's tag nodes
 				// an edge between an artist and each of their tags
+                // after the 12 categories
 				for(var i = 0; i < data.length; i++){
 					for(var j =0; j < data[i].tag.length; j++){
 						dataset.nodes.push(data[i].tag[j]);
@@ -42,9 +42,9 @@
 							if(data[i].category[j].theme == dataset.nodes[k].name){
 								dataset.edges.push({source: i+12, target: k});
 							}
-						}		
+						}
 					}
-				}				
+				}
 
 
 				// SVG global
@@ -58,8 +58,6 @@
 					.size([w, h])
 					.linkDistance([125])
 					.charge([-2400])
-					// .linkDistance([200])
-					// .charge([-800])
 					.start();
 
 				//Append an SVG element to the page
@@ -69,18 +67,18 @@
 					.append("svg")
 					//responsive SVG needs these 2 attributes and no width and height attr
 				   	.attr("preserveAspectRatio", "xMinYMin meet")
-				   	.attr("viewBox", "0 0 600 400")
+				   	.attr("viewBox", "0 0 600 1200")
 				   	//class to make it responsive
-				   	.classed("svg-content-responsive", true) 
+				   	.classed("svg-content-responsive", true)
 					.attr("id","connections-map")
 					.attr("width", w)
 					.attr("height", h)
 					.call(d3.behavior.zoom().on("zoom", function () {
 						svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
-						
+
 					}))
     				.append('g');
-				
+
 				//Append each edge as a line
 				var edges = svg.selectAll("line")
 					.data(dataset.edges)
@@ -123,7 +121,7 @@
 	                })
 				  	.attr("id", function(d,i){return "art_" + d.id;})
 					.attr("class", function(d,i){return d.type;})
-				  	.attr("fill", "black")	
+				  	.attr("fill", "black")
 					.call(force.drag);
 
 
@@ -133,11 +131,36 @@
 						 .attr("y1", function(d) { return d.source.y; })
 						 .attr("x2", function(d) { return d.target.x; })
 						 .attr("y2", function(d) { return d.target.y; });
-				
+
 					nodes.attr("cx", function(d) { return d.x; })
 						 .attr("cy", function(d) { return d.y; });
-					
+
 					titles.attr("x", function(d) { return d.x -10;})
 						 .attr("y", function(d) { return d.y - 20;});
 				});
+
+
+				// physical map
+               	var physicalMapSVG = d3.select("#exhibition-map");
+
+               	var ogs = physicalMapSVG.selectAll("g")
+					.data(data)
+					.enter()
+					.append("g")
+					.attr("id", function(d,i){return "art_" + d.id;})
+					.classed("artist", true);
+
+					ogs.append("circle")
+					.attr("r","25")
+					.attr("cx",function(d,i){return parseInt(d.location[0][0])+12})
+					.attr("cy",function(d,i){return parseInt(d.location[0][1])-5})
+					.style({"fill":"lightgray","display":"none"});
+					
+					ogs.append("text")
+					.text(function(d,i){
+						return d.name;
+					})
+					.classed("cls-3",true)
+					.attr("x",function(d,i){return d.location[0][0]})
+					.attr("y",function(d,i){return d.location[0][1]});
 			});
