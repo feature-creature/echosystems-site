@@ -185,7 +185,7 @@ p.artist{
         .svg-content-responsive {
             display: inline-block;
             position: absolute;
-            top: 10px;
+            top: 0;
             left: 0;
         }
 
@@ -193,17 +193,13 @@ p.artist{
 
 .theme-nav{
     float:right;
-    width:15%;
     position: absolute;
     right: 0px;
     clear: right;
-    
     width: 18%;
     border-left: 1px solid #000;
     display:block;
-    /*height: 100%;*/
     padding-bottom: 200px;
-    /*overflow-y: scroll;*/
 }
 
 .theme-nav h3{
@@ -344,6 +340,7 @@ g text.cls-1:hover{
     border-right: 1px solid #000;
     display:block;
     position:absolute;
+    padding-bottom: 150px;
     /*height: 100%; */
     /*overflow-y: scroll;*/
 }

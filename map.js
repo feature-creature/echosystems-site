@@ -16,13 +16,6 @@ $(document).ready(function(){
                 categories += "<div class='category other-themes'>"+val.category[i].theme+"</div>"
             }
 
-            var tags = "";
-            for(var i = 0; i < val.tag.length; i++){
-                tags += "<div class='tag other-themes'>"+val.tag[i].name+"</div>"
-                $("#tag-list").append("<p id='art_"+ val.tag[i].id +"' class='tag personal-theme'>"+val.tag[i].name+"</p>");
-
-            }
-
             var socials = "";
             var targeted = "";
             for(var i = 0; i < val.social.length; i++){
@@ -42,7 +35,6 @@ $(document).ready(function(){
                 +val.id+"' class='artist-info'><div class='esc'>x</div><div class='name'>"
                 +val.name+"</div>"
                 +categories
-                +tags
                 +"<div class='bio'>"
                 +val.bio+"</div>"
                 // +"<div class='project'>"+val.project+"</div>"
@@ -88,11 +80,6 @@ $(document).ready(function(){
             $(".category-info").css("display", "none");
         });
 
-        // example theme highlighting on map
-        // $(".theme_1").click(function(){
-        //     $(".theme_1").css("color", "#ff000");
-        //     $("g text").css("fill","#ff0000");
-        // });
     });
 });
 
