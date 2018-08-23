@@ -34,7 +34,10 @@
 		"bio": "Freya Berkhout is a Sydney-born multi-award winning composer, vocalist and creative technologist based in London. With a background in film composition, electronic and classical music, Freya’s interests have always focused on the co-existence of the organic and synthetic. Her practice is informed by Feminist TechnoScience and delves into digital ecologies, human / nature entanglement and emergence. An activist at heart, she is inspired by cultural exchange, food politics, the human voice and the natural world. Her work encompasses programming, physical computing, field recording, composition and fabrication techniques, and is intended to give humans an opportunity to reconnect with nature. \n Freya’s film music has screened at festivals around the globe, including Cannes Film Festival (FR), BFI London Film Festival (UK), Palm Springs International Film Festival (US) and Warsaw Film Festival (POL).",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["50","510"]
+		]
 	},
 	{
 		"id": "ID_Panja_Göbel",
@@ -72,7 +75,10 @@
 		"bio": "Panja Göbel invite us to experiment new methods of feeling and thinking with technology through interactive and conceptual artworks. In her installations, the boundaries between humans and machines are blurred. Working across different technologies and disciplines, Panja pairs unlikely elements to create sometimes uncomfortable spaces to invite new conversations. Whilst often commenting on issues of oppression, her pieces contain a ludic element where interaction presents an open space for exploration, to leave the audience with their own interpretation. \n Her previous piece, ‘Face Casino’ interrogated the relationship we have with facial recognition systems by proposing a system of machine masking. Currently, she is exploring phantom syndromes and metaplasms in a project that combines einterpreted Victorian prosthetics, physical computing and an augmented projection which computes the user’s movements. \nBringing a feminist, alternative perspective to technology, Panja often subverts existing interpretations of computational systems by asking the audience to renegotiate the tangled networks of humans and machines.",
 		"project": "...",
 		"website": "http://www.panjapop.com",
-		"social":[]
+		"social":[],
+		"location":[
+			["240","250"]
+		]
 
 	},
 	{
@@ -107,7 +113,10 @@
 		"bio": "Taoran Xu is a creative coder and media artist from China who is interested in the way our senses direct our experience of the world around us, and how technology can enhance and attenuate senses to manipulate human perception. He currently focuses on the study of sound and the power it has over the body and mind, namely, psychoacoustics. He investigates this intangible medium by attempting to make it tangible. Taoran digitises sound sources from daily life and then edits and rearranges the sound objects into physical space, creating immersive, binaural sonic narratives which listeners are encouraged to explore and imagine. What do the acoustic images look like in the mind of listeners? How do they differ? Do the listeners realise that the world they are living in is an artefact of technology?",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["605","1675"]
+		]
 	},
 	{
 		"id": "ID_Daniah_Alsaleh",
@@ -147,6 +156,9 @@
 		"website": "",
 		"social":[
 			{"instagram": "http://www.instagram.com/daniah_alsaleh/"}
+		],
+		"location":[
+			["220","1635"]
 		]
 	},
 	{
@@ -171,7 +183,10 @@
 		"bio": "",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["950","1660"]
+		]
 	},
 	{
 		"id": "ID_Eevi_Rutanen",
@@ -210,6 +225,9 @@
 		"website": "http://www.eevirutanen.com/",
 		"social":[
         	{"instagtam": "https://www.instagram.com/eebiru/"}
+		],
+		"location":[
+			["570","400"]
 		]
 	},
 	{
@@ -250,6 +268,9 @@
 		"website":"",
 		"social":[
 			{"instagram": "https://www.instagram.com/lauriecarter_glenneth/"}
+		],
+		"location":[
+			["1200","330"]
 		]
 	},
 	{
@@ -288,6 +309,9 @@
 			{"vimeo": "https://vimeo.com/chrisspeedvisuals"},
         	{"instagram": "https://www.instagram.com/chrisspeedvisuals/"},
         	{"twitter": "https://twitter.com/chrisspeedvj"}
+    	],
+    	"location":[
+    		["1200","360"]
     	]
  
 	},
@@ -329,6 +353,10 @@
 		"website": "http://tadne.se/",
 		"social":[
         	{"instagram": "https://www.instagram.com/annietxdne/"}
+		],
+		"location":[
+			["1200","390"],
+			["425","570"]
 		]
 	},
 	{
@@ -370,6 +398,9 @@
 		"social":[
         	{"instagram": "https://www.instagram.com/friend_red/"},
         	{"twitter": "https://twitter.com/_friendred"}
+		],
+		"location":[
+			["1200","420"]
 		]
 	},
 	{
@@ -390,7 +421,10 @@
 		"bio": "",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["1200","450"]
+		]
 	},
 	{
 		"id": "ID_Sarah_Song_Xiaran",
@@ -410,7 +444,10 @@
 		"bio": "Sarah Song Xiaran is a new media artist currently based in London. After earning a degree in Film and Media Arts at Hong Kong Baptist University, she is now pursuing an MFA in Computational Arts at Goldsmiths. \n Sarah’s practice lies at the junction of the natural world, sound as well as visuals. She works in a variety of media and most of her artworks aim to explore the creative relationships and possibilities between nature and digital technology and to find poetic meaning in everyday life. Always fascinated by the macroscopic world and by the concepts of minimalism and surrealism, she believes mystery reveals itself to us through nature and time. She loves to experiment with patterns, texture and mixed media in order to share her vivid imagination. Iridology and biometric data sonification are the focus of Sarah’s recent research and she tries to provide her audience with a unique personal experience in unexpected ways.",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["455","35"]
+		]
 	},
 	{
 		"id": "ID_Laura_Dekker",
@@ -450,6 +487,9 @@
 		"website": "http://www.lauradekker.io",
 		"social":[
         	{"twitter": "https://twitter.com/LauraDekker_io"}
+ 		],
+ 		"location":[
+ 			["455","130"]
  		]
 	},
 	{
@@ -488,7 +528,10 @@
 		"bio": "Colin Higgs’ art practice is primarily directed towards morphogenetic artworks, which focuses on embracing a partnership with nature. Either the relationship with nature is dynamic or based on mixed media artefacts that use morphogenetic algorithms in their structures. Colin explores  generative and physical processes of difference, repetition, genetics and natural formations. \n His background in art research has involved investigations into swarming algorithms and emergence theories; from ‘boids’ to ‘stochastic diffusion search’,and into swarm art using machine learning and Max MSP. Emerging from this research, he steered his practice towards morphogenesis by studying the pioneering form-finding work of Frei Otto and the reaction diffusion work of Alan Turing. /n Colin strives to create installations that constitute digital ecologies based on genetic algorithms through the use of the primary theories of morphogenesis and the inclusion of form-finding artefacts. His work explores the non-human turn through interactive installations consisting only of machines, biology and code.",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["265","790"]
+		]
 	},
 	{
 		"id": "ID_Valerio_Viperino",
@@ -514,6 +557,9 @@
 		"website": "http://valerioviperino.me",
 		"social":[
         	{"blog": "http://vvzen.it"}
+		],
+		"location":[
+			["1235","1660"]
 		]
 	},
 	{
@@ -554,6 +600,9 @@
 		"website":"",
 		"social":[
 			{"email": "mailto:ggroopnarine[at]gmail.com"}
+		],
+		"location":[
+			["1200","250"]
 		]
 	},
 	{
@@ -594,6 +643,9 @@
 		"website": "http://jcw.persona.co",
 		"social":[
         	{"github": "http://www.github.com/jchwenger"}
+		],
+		"location":[
+			["725","660"]
 		]
 	},
 	{
@@ -632,7 +684,10 @@
 		"bio": "Rebecca Aston is a Zimbabwean artist currently based in London. Her work explores material culture. She questions and decodes the meaning people embed in both physical and virtual spaces, objects and the environment. Reflecting on post-colonialism, she examines global flows of data, matter and people, through history up until the present day and on into speculative futures. Temporality is central to her practice, both as medium, including capture technologies, computation and the moving image, as well as subject matter, such as history and memory. \n Rebecca has a BA in Fine Art from Yale. She also works as a web developer and creative technologist.",
 		"project": "...",
 		"website": "http://rebeccaaston.com/",
-		"social":[]
+		"social":[],
+		"location":[
+			["240","465"]
+		]
 	},
 	{
 		"id": "ID_Laura_Subirats",
@@ -672,6 +727,9 @@
 		"website": "http://www.archivo.me",
 		"social":[
         	{"instagram": "https://www.instagram.com/laura.subirats"}
+		],
+		"location":[
+			["50","325"]
 		]
 	},
 	{
@@ -704,6 +762,9 @@
 		"website":"",
 		"social":[
 			{"email": "mailto:isaac@ishimura.uk"}
+		],
+		"location":[
+			["240","315"]
 		]
 	},
 	{
@@ -749,6 +810,9 @@
 		"social":[
         	{"instagram": "https://www.instagram.com/helena_wee/"},
         	{"twitter": "https://twitter.com/HelenaWee_"}
+        ],
+        "location":[
+        	["1200","200"]
         ]
 	},
 	{
@@ -783,7 +847,10 @@
 		"bio": "Megan Bates creates computational speculative objects. Wild-women/crones, forsaken people who find joy in nature and their own sexuality, are the imaginary creators of these highly crafted pieces. Electronic weaving, herbalism and decoration are used to demonstrate how computation is witchcraft as well as science. \n Her current work explores a symbiotic relationship between organisms and technology. Categorising both as nonhuman 'critters', they combine to sustain each other as a single entity, similar to coral or lichen. \n This symbiosis of 'wild' and 'cultured' is the narrative which propels Megan's work. In a subversion of normative patriarchal theoretical structures, she brings together the dichotomised structures of nature/culture, the body/mind, and feminine/masculine. What emerge are queer objects which demonstrate alternative futures where technology can be wild, and organisms can be computational.",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["60","615"]
+		]
 	},
 	{
 		"id": "ID_Thalia_Agroti",
@@ -803,7 +870,10 @@
 		"bio": "Thalia Agroti is a multidisciplinary artist currently based in London, exploring different forms of media within the vast spectrum of art and science. \n With an outmost affinity to the ephemerality of sound, Thalia's practice has taken a much more physical presence through an enhanced curiosity for materials that can be paired with technology. \n In whichever form her work manifests in, she intuitively engages with ideas that primarily stem from personal experiences and introspection. \n While sentimentality is the fuel for her creative drive, the final outcome is often immersive or interactive in nature, in an effort to bring forward a mutual understanding for the viewer, or simply to allow room for playful inquisitiveness. \n Her recent research fuses themes surrounding existentialism with the non-human through a speculative approach.",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["710","240"]
+		]
 	},
 	{
 		"id": "ID_James_Tregaskis",
@@ -837,7 +907,10 @@
 		"bio": "James Tregaskis has worked with technology since the early seventies, starting as an animator and producing advertisements using computational methods to create ‘cel animations’ and titles for ‘The New Avengers’. Medi-Cine, Halas and Batchelor were among his clients. After graduating, he worked in advertising, piloting the first portable computer for Pfizer in the UK, United States and Canada. At that period, James sold his soul to ‘mammon’, working as a software developer, mostly for financial institutions until he could stand it no more. \n So, after travelling the world on his motorcycle, he returned to re-explore the joys of computing but divorced himself from commerce. James has hosted ‘Outsider In’ on Resonance 104.4fm – showcasing outsider artists and musicians. He has studied Buddhist thangka paintings for the last 25 years and is interested in the Fourth Way practice, as a means to examine one’s life experience and to make sense of it.",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["480","1180"]
+		]
 	},
 	{
 		"id": "ID_Luke_Demarest",
@@ -871,7 +944,10 @@
 		"bio": "Luke Demarest is a wryly ambivalent data-vagabond with a background in sculpture and software. His recent studies look at the notion of 'pure' (non-material) data and its material culture and language conflations. Luke was an Engineer at Rosetta Stone (2014-2016) and an Artist in Residence at the American Underground (2014). Recent exhibitions include 'Expanding Systems' at the Art in Perpetuity Trust in London (2018) and 'Aibohphobia and the Reifier's Schadenfreude' at LibrePlanet in Boston and at the Carrack in Durham (2017).",
 		"project": "...",
 		"website": "http://demare.st",
-		"social":[]
+		"social":[],
+		"location":[
+			["725","790"]
+		]
 	},
 	{
 		"id": "ID_Danny_Keig",
@@ -905,7 +981,10 @@
 		"bio": "Danny Keig is an artist and creative coder from Sydney, Australia. His work seeks to uncover the surprising and unpredictable qualities of nature as captured or embodied through technology. Incorporating a feminist technoscientific approach, Danny attempts to reevaluate our links with nature and the environment, and to explore the crossover between organic and digital ecologies. \n With a background in music composition, sound engineering and production, he has spent many years unearthing organic qualities in technology. Inspired by experimental music, he has developed an appreciation for DIY methodologies that he carries with him into the world of software and his current interest in graphics programming.",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["240","50"]
+		]
 	},
     {
 		"id": "ID_Julia_Makivic",
@@ -950,6 +1029,9 @@
 		"social":[
 			{"instagram": "https://www.instagram.com/juliamakivic"},
 			{"tumblr": "http://sunnymothman200.tumblr.com/"}
+		],
+		"location":[
+			["220","1180"]
 		]
 	},
 	{
@@ -984,7 +1066,10 @@
 		"bio": "Elias Berkhout is an Australian creative technologist, synthesist and composer based in London, whose work investigates ideas surrounding the exploration of space through sound. With a background in generative and improvised electronic music, Elias’ primary area of research has looked into the use of postcolonial computing in Indigenous communities in Australia, and how technology is changing the archiving and dissemination of traditional knowledge and collective memory. Elias’ more recent work investigates these ideas of archiving, sound and space through use of realtime data to control kinetic sculptures and soundscapes, as a means of creating interesting new methods of visual accompaniment to sound and representation of physical space.",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["50","465"]
+		]
 	},
 	{
 		"id": "ID_Tin_Geber",
@@ -1010,6 +1095,9 @@
 		"website": "http://www.tin.fyi",
 		"social":[
 			{"blog": "https://tingeber.github.io/uniblog/"}
+		],
+		"location":[
+			["400","1310"]
 		]
 	},
 	{
@@ -1051,6 +1139,9 @@
 		"social":[
 			{"instagram": "https://www.instagram.com/hello__idiot"},
 			{"twitter": "http://www.twitter.com/hello__idiot"}
+		],
+		"location":[
+			["240","175"]
 		]
 	},
 	{
@@ -1073,6 +1164,9 @@
 		"website": "https://willparry.wordpress.com/",
 		"social":[
 			{"instagram": "https://www.instagram.com/pickleparry"}
+		],
+		"location":[
+			["685","1250"]
 		]
 	},
 	{
@@ -1106,6 +1200,9 @@
 		"social":[
 			{"instagram": "https://www.instagram.com/sabrina_theatredu1k"},
 			{"vimeo": "https://www.vimeo.com/234081110"}
+		],
+		"location":[
+			["170","570"]
 		]
 	},
 	{
@@ -1136,7 +1233,10 @@
 		"bio": "Plants and other biological organisms have been creeping into David Williams’ practice of late. Earlier work was marked by a preoccupation with emergent patterns from the repetition of basic shapes, seemingly logically evolving from painting into generative computer animation. One of the underlying aspects celebrated by both of these practices, however, is their overtly deterministic nature (which the artist exploits), deliberately seeking to obscure personal ‘human’ expression, per se. Taking cues from ANT and panpsychist theories, David now seeks non-human collaborators for the creation of new artefacts; to act as an enabler to organisms whose morphogenesis, it could be said, is an expression of their being, their own unique consciousness. Be it branching, sprouting, weaving, pulsating, or, executing, calling, compiling, or allocating, both biological and computational entities have their distinctive processes and modes of operation, which, through the inadequacies of human language, we try to make sense of, but which will nonetheless always remain other, alien, recondite and fugitive. David’s current work seeks to build upon such collaborations, with the realisation that one must surrender to such inadequacies whilst at the same time wondering and celebrating the complexity of being, in its myriad tentacular forms.",
 		"project": "...",
 		"website": "https://eccirc.netlify.com",
-		"social":[]
+		"social":[],
+		"location":[
+			["455","318"]
+		]
 	},
 	{
 		"id": "ID_Petros_Veloussis",
@@ -1164,7 +1264,10 @@
 		"bio": "Petros Velousis is an Athens-born artist and creative technologist currently based in London. With a background in TV, including theatre music composition, music production, and sound design, his work focuses on exploring new sonic possibilities and non-traditional approaches to musical practice. His current art practice seeks novel interpretations of sound and musical objects through responsive sound pieces and installations, and aims to question the way we interact with ourselves and with others through our memories, as well as nature and machine systems. His creative process is inspired by the exploration of the surreal, the futile, chance and introspection.",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["677","1360"]
+		]
 	},
 	{
 		"id": "ID_Teodora_Fartan",
@@ -1206,7 +1309,10 @@
 		"bio": "Teodora Fartan (b. 1995) is a Romanian artist based in London. Trained in classical drawing and painting from a young age, she seeks to build on these traditional foundations through the use of computation in an effort to create a symbiosis of old and new methodologies focused around ideas of interaction, simulation and embodiment. \n Her artworks position themselves in the grey areas where the digital and the physical overlap, oftentimes combining tangible objects with code-based visuals. Interaction occupies a central role in Teodora’s approach to art making, individual experience becoming a primary focus of the work. Her art practice is heavily based around creating new modes of experience and human-machine interaction through the use of responsive systems. These experiments aim to play with and ultimately expand the framework of painting through the use of digital light systems, projection, analogue sensors, live data and robotics. \n Interaction plays a central role in Teodora’s approach to art making and her art practice is heavily based around creating new modes of experience and human-machine interaction through the use of analogue interactive systems. \n Teodora’s work has been featured in exhibitions across Romania, Hungary, the UK, and Australia, and features in both permanent and private collections in Romania, China and the US. In 2016, she was shortlisted for the Australian Contemporary Art Awards for her exploration of the use of new materials within painting.",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["535","80"]
+		]
 	},
 	{
 		"id": "ID_Laura_Traver",
@@ -1229,6 +1335,9 @@
 		"social":[
 			{"youtube": "http://www.tinyurl.com/lauratraver"},
 			{"email": "mailto:LNTraver@hotmail.com"}
+		],
+		"location":[
+			["480","1250"]
 		]
 	},
 	{
@@ -1255,6 +1364,9 @@
 		"website": "http://www.samuelludford.com",
 		"social":[
 			{"instagram": "http://www.instagram.com/samludford"}
+		],
+		"location":[
+			["722","720"]
 		]
 	},
 	{
@@ -1271,7 +1383,10 @@
 		"bio": "Miduo Gao is a visual artist and illustrator from China. Currently, she is exploring possible connections between art and technology. \n In her art practices, she likes to combine politics, environmental issues, and personal experiences with her imagination. Her recent works still focus on those “normal” things that people ignored in their daily life. For instance, environmental pollution, like noise and air pollution. For Miduo using a combination of technology and art allows her to explore her conceptual concerns at a deeper visual level. She hopes that her work can be accepted at the aesthetic aspect. She aims to create artworks that generate public awareness about environmental issues.",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["890","240"]
+		]
     },
     {
 		"id": "ID_Mat_Sayer",
@@ -1295,7 +1410,10 @@
 		"bio": "",
 		"project":"...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["400","1360"]
+		]
 	},
 	{
 		"id": "ID_Olivia_Molitor",
@@ -1315,7 +1433,10 @@
 		"bio": "By exploring the self, the artist explores the collective experience and the driving forces that govern what it is to be a woman today. Focusing on feminist themes as well as mortality the tensions are explored through the use of multimedia. The artist wants to test this relationship and the tensions between screens or what is Ôhuman; the connection between nature and technology. Utilizing the versatile applications of printmaking, the artist effectively marries computation and the tangible practice. Further seeking to bridge the connection between the new and the old. The artist strives to balance the undeniable presence of technology by means of process artwork that is unequivocally effected by the artist herself.",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["685","1180"]
+		]
 	},
 	{
 		"id": "ID_Jana_Velinova",
@@ -1334,6 +1455,9 @@
 		"social":[
 			{"instagram": "http://www.instagram.com/smarihda"},
 			{"vimeo": "https://vimeo.com/zjana"}
+		],
+		"location":[
+			["220","1310"]
 		]
 	},
 	{
@@ -1354,7 +1478,10 @@
 		"bio": "",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["1000","200"]
+		]
 	},
 	{
 		"id": "ID_Yunjeong_Jang",
@@ -1374,7 +1501,10 @@
 		"bio": "",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["425","1710"]
+		]
 	},
 	{
 		"id": "ID_Ilya_Sipyain",
@@ -1394,6 +1524,9 @@
 		"bio": "",
 		"project": "...",
 		"website": "",
-		"social":[]
+		"social":[],
+		"location":[
+			["220","1710"]
+		]
      }
 ]
