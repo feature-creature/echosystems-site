@@ -1,7 +1,3 @@
-// TODO: add in social details to modals
-// make sure physical map triggers everything else
-// make sure json is complete and updated
-
 $(document).ready(function(){
 
     // load json data
@@ -13,8 +9,20 @@ $(document).ready(function(){
 
             var categories = "";
             for(var i = 0; i < val.category.length; i++){
-                categories += "<div class='category other-themes'>"+val.category[i].theme+"</div>"
+                var catId = ""
+                for(var k = 0; k < 12; k++){
+                    if(val.category[i].theme == dataset.nodes[k].name){
+                        catId += "art_" + dataset.nodes[k].id;
+                    }
+                }
+
+                categories += "<div id='"+ catId +"'' class='category other-themes'>"+val.category[i].theme+"</div>"
             }
+
+            var tags = "";
+            for(var i = 0; i < val.tag.length; i++){
+                tags += "<div class='tag other-themes'>"+val.tag[i].name+"</div>"
+             }
 
             var socials = "";
             var targeted = "";
@@ -35,6 +43,7 @@ $(document).ready(function(){
                 +val.id+"' class='artist-info'><div class='esc'>x</div><div class='name'>"
                 +val.name+"</div>"
                 +categories
+                +tags
                 +"<div class='bio'>"
                 +val.bio+"</div>"
                 // +"<div class='project'>"+val.project+"</div>"

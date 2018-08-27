@@ -4,7 +4,7 @@
 		"type": "artist",
 		"category": [{
 				"id": "1",
-				"theme": "DIGITAL ECOLOGIES"
+				"theme": "TEMPORAL"
 			},
 			{
 				"id": "2",
@@ -72,7 +72,7 @@
 				"name": "Hacking the body"
 			}
 		],
-		"bio": "Panja Göbel makes interactive conceptual artworks and installations that reinterpret our relationship with technology. Blurring the boundaries between human and machine, her work proposes new methods of feeling and thinking with technology.<br><br>Working across different technologies and disciplines, she pairs unlikely elements to create sometimes uncomfortable spaces to invite new conversations.<br><br>Whilst often commenting on issues of oppression, her pieces contain a ludic element where interaction presents an open space for exploration, to leave the audience with their own interpretation.<br><br>Currently Panja is exploring phantom syndromes and metaplasms in a project that combines reinterpreted Victorian prosthetics, physical computing and an augmented projection that computes the user’s movements.<br><br>Her previous piece, ‘Face Casino’ interrogates the relationship we have with facial recognition systems by proposing a system of machine masking.<br><br>Bringing a feminist, alternative perspective to technology, her pieces often subvert existing interpretations of computational systems by asking the audience to renegotiate the tangled networks of humans and machines.",
+		"bio": "Panja Göbel invite us to experiment new methods of feeling and thinking with technology through interactive and conceptual artworks. In her installations, the boundaries between humans and machines are blurred. Working across different technologies and disciplines, Panja pairs unlikely elements to create sometimes uncomfortable spaces to invite new conversations. Whilst often commenting on issues of oppression, her pieces contain a ludic element where interaction presents an open space for exploration, to leave the audience with their own interpretation. \n Her previous piece, ‘Face Casino’ interrogated the relationship we have with facial recognition systems by proposing a system of machine masking. Currently, she is exploring phantom syndromes and metaplasms in a project that combines einterpreted Victorian prosthetics, physical computing and an augmented projection which computes the user’s movements. \nBringing a feminist, alternative perspective to technology, Panja often subverts existing interpretations of computational systems by asking the audience to renegotiate the tangled networks of humans and machines.",
 		"project": "...",
 		"website": "http://www.panjapop.com",
 		"social":[],
@@ -221,10 +221,10 @@
 				"name": "Feminist science"
 			}
 		],
-		"bio": "In the work of Eevi Rutanen (b. 1992, Finland) robotic creatures and interactive installations explore the downward slope from the cute towards the uncanny. Drawing on her background in bioengineering, Eevi’s work is often inspired by biological processes and forms. By combining complex computational systems and scientific paradigms with frivolity and feminism, she strives to imagine alternative ways of being and knowing through empowered softness and sensuality. Taking the form of tumescent robot tentacles, symbiotic plant cyborgs, mechanical intestine marionettes and gut microbe confections, her work merges the visceral with the whimsical into entangled hybrids of bodies and technology. Her most recent work examines tactile epistemologies and manual labour from the point of view of feminist theory and the female experience. Eevi is also a member of GRMMXI, a design collective committed to non-hierarchical collaboration and lolz.",
+		"bio": "In the work of Eevi Rutanen (b. 1992, Finland) robotic creatures and interactive installations explore the downward slope from the cute towards the uncanny. Drawing on her background in bioengineering, Eevi’s work is often inspired by biological processes and forms. By combining complex computational systems and scientific paradigms with frivolity and feminism, she strives to imagine alternative ways of being and knowing through empowered softness and sensuality. Taking the form of tumescent robot tentacles, symbiotic plant cyborgs, mechanical intestine marionettes and gut microbe confections, her work merges the visceral with the whimsical into entangled hybrids of bodies and technology. Her most recent work examines tactile epistemologies and manual labour from the point of view of feminist theory and the female experience. /n Eevi is also a member of GRMMXI, a design collective committed to non-hierarchical collaboration and lolz.",
 		"website": "http://www.eevirutanen.com/",
 		"social":[
-        	{"instagram": "https://www.instagram.com/eebiru/"}
+        	{"instagtam": "https://www.instagram.com/eebiru/"}
 		],
 		"location":[
 			["570","400"]
@@ -525,7 +525,7 @@
 				"name": "Genetic Algorithms"
 			}
 		],
-		"bio": "Colin Higgs’ art practice is primarily directed towards morphogenetic artworks, which focuses on embracing a partnership with nature. Either the relationship with nature is dynamic or based on mixed media artefacts that use morphogenetic algorithms in their structures. Colin explores  generative and physical processes of difference, repetition, genetics and natural formations. \n His background in art research has involved investigations into swarming algorithms and emergence theories; from ‘boids’ to ‘stochastic diffusion search’,and into swarm art using machine learning and Max MSP. Emerging from this research, he steered his practice towards morphogenesis by studying the pioneering form-finding work of Frei Otto and the reaction diffusion work of Alan Turing. <br><br> Colin strives to create installations that constitute digital ecologies based on genetic algorithms through the use of the primary theories of morphogenesis and the inclusion of form-finding artefacts. His work explores the non-human turn through interactive installations consisting only of machines, biology and code.",
+		"bio": "Colin Higgs’ art practice is primarily directed towards morphogenetic artworks, which focuses on embracing a partnership with nature. Either the relationship with nature is dynamic or based on mixed media artefacts that use morphogenetic algorithms in their structures. Colin explores  generative and physical processes of difference, repetition, genetics and natural formations. \n His background in art research has involved investigations into swarming algorithms and emergence theories; from ‘boids’ to ‘stochastic diffusion search’,and into swarm art using machine learning and Max MSP. Emerging from this research, he steered his practice towards morphogenesis by studying the pioneering form-finding work of Frei Otto and the reaction diffusion work of Alan Turing. /n Colin strives to create installations that constitute digital ecologies based on genetic algorithms through the use of the primary theories of morphogenesis and the inclusion of form-finding artefacts. His work explores the non-human turn through interactive installations consisting only of machines, biology and code.",
 		"project": "...",
 		"website": "",
 		"social":[],
@@ -758,7 +758,7 @@
 				"name": "Pathfinding"
 			}
 		],
-		"bio": "Isaac Clarke (b. 1991) is an artist and programmer who seems to be moving back and forth between Leeds and London. He was a founder of The Institute of Jamais Vu (2011-2014) in London, and has an ongoing study of deserts at NL’CAO (2013) in New Mexico investigating the desert landscape as a place of abstraction and projection. His recent work has been exploring the presence of the dead as both political allies and imagined community, attempting to hold these thoughts inside studies of woven, knotted, and labyrinthine forms. Somewhat like those ruins being revealed by the drought that the BBC had an article about the other week. Recent Exhibitions include ‘I’ve Been Out Walking’ at Serf in Leeds (2017), ‘General Studies’ at Outpost in Norwich (2016), and ‘Wake’ at Pas Le Temps in Nantes (2015).",
+		"bio": "Isaac Clarke is an artist and programmer, travelling back and forth between Leeds and London. His ongoing study of deserts at NL’CAO (2013) in New Mexico investigates the desert landscape as a place of abstraction and projection. Isaac is also the founder of The Institute of Jamais Vu (2011-2014) in London. \n His last artwork explores the presence of the dead as both political allies and imagined community through the studies of woven, knotted, and labyrinthine forms. \n Recent Exhibitions include ‘I’ve Been Out Walking’ at Serf in Leeds (2017), ‘General Studies’ at Outpost in Norwich (2016), and ‘Wake’ at Pas Le Temps in Nantes (2015).",
 		"project": "...",
 		"website":"",
 		"social":[
@@ -942,7 +942,7 @@
 				"name": "Free Culture"
 			}
 		],
-		"bio": "Luke Demarest is a wryly ambivalent data-vagabond with a background in sculpture and software. His recent studies look at the notion of 'pure' <i>immaterial</i> data and its conflations across material culture and language. Luke was an Engineer at Rosetta Stone (2014-2016) and an Artist in Residence at the American Underground (2014). Recent exhibitions include 'Expanding Systems' at the Art in Perpetuity Trust in London (2018) and 'Aibohphobia and the Reifier's Schadenfreude' at LibrePlanet in Boston (2017) and at the Carrack in Durham (2017).",
+		"bio": "Luke Demarest is a wryly ambivalent data-vagabond with a background in sculpture and software. His recent studies look at the notion of 'pure' (non-material) data and its material culture and language conflations. Luke was an Engineer at Rosetta Stone (2014-2016) and an Artist in Residence at the American Underground (2014). Recent exhibitions include 'Expanding Systems' at the Art in Perpetuity Trust in London (2018) and 'Aibohphobia and the Reifier's Schadenfreude' at LibrePlanet in Boston and at the Carrack in Durham (2017).",
 		"project": "...",
 		"website": "http://demare.st",
 		"social":[],
@@ -1315,7 +1315,7 @@
 			"name": "ethereal"
 		}
 		],
-		"bio": "Teodora Fartan (b. 1995) is a Romanian artist based in London, UK. Trained in classical drawing and painting from a young age, she seeks to build on these traditional foundations through the use of computation, in an effort to create a symbiosis of old and new methodologies focused around ideas of interaction, simulation and embodiment.<br><br>Her artworks position themselves within the grey areas where the digital and the physical overlap, oftentimes combining tangible objects with code-based visuals. Interaction occupies a central role in Teodora’s approach to art making, individual experience becoming a primary focus of the work; her art practice is heavily based around creating new modes of experience and human-machine interaction through the use of responsive systems. These experiments aim to play with and ultimately expand the framework of painting, through the use of digital light systems, projection, analog sensors, live data and robotics.<br><br>Teodora’s work has been featured in exhibitions across Romania, Hungary, the UK, Australia and features in both permanent and private collections in Romania, China and the US. In 2016, she was shortlisted for the Australian Contemporary Art Awards for her exploration of the use of new materials within painting.",
+		"bio": "Teodora Fartan (b. 1995) is a Romanian artist based in London, UK. Trained in classical drawing and painting from a young age, she seeks to build on these traditional foundations through the use of computation, in an effort to create a symbiosis of old and new methodologies focused around ideas of interaction, simulation and embodiment. Her artworks position themselves within the grey areas where the digital and the physical overlap, oftentimes combining tangible objects with code-based visuals. Interaction occupies a central role in Teodora’s approach to art making, individual experience becoming a primary focus of the work; her art practice is heavily based around creating new modes of experience and human-machine interaction through the use of responsive systems. These experiments aim to play with and ultimately expand the framework of painting, through the use of digital light systems, projection, analog sensors, live data and robotics. Teodora’s work has been featured in exhibitions across Romania, Hungary, the UK, Australia and features in both permanent and private collections in Romania, China and the US. In 2016, she was shortlisted for the Australian Contemporary Art Awards for her exploration of the use of new materials within painting.",
 		"project": "...",
 		"website": "",
 		"social":[],

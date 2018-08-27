@@ -1,13 +1,14 @@
  .header-logo{
             
-            width:550px;
-            margin: 0px 0 0 -275px !important;
-            padding-left:50%;
+            width:64%;
+            /*margin: 0px 0 0 -275px !important;*/
+            margin: 0;
+            /*padding-left:50%;*/
             display: block;
             position: absolute;
             color: white;
             text-align:center;
-            top:25%;
+            padding-top: 50px;
         }
         
         html, body, #masthead-wrapper, canvas, main, header{
@@ -92,7 +93,9 @@ p.artist{
     font-size: 1em;
     position: absolute;
     margin: 0;
-    height: 100%; line-height: 3em;
+    /*height: 100%;*/
+    height: unset;
+    line-height: 3em;
     width: 18%;
 }
 
@@ -157,6 +160,7 @@ p.artist{
             margin-right: 18%;
             border-right: 1px solid black;
             border-left: 1px solid black;
+            min-height: 1750px;
         }
 
         
@@ -255,6 +259,9 @@ g text.cls-1:hover{
     text-transform: uppercase;
     margin: 1em 0;
 }
+.tag.other-themes{
+    text-transform: lowercase;
+}
 
 .artist-info .bio{
     text-align:left;
@@ -277,6 +284,65 @@ g text.cls-1:hover{
     cursor: pointer;
 }
 
+#category-list .category, .category.other-themes{
+    padding-left: 25px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.category.other-themes{
+    background-size: 15px 15px;
+}
+
+#category-list .category#art_ID_TEMPORAL, .category.other-themes#art_ID_TEMPORAL{
+    background-image: url(./images/temporality.png);
+}
+
+#category-list .category#art_ID_INTERFACING_AND_PLAY, .category.other-themes#art_ID_INTERFACING_AND_PLAY{
+    background-image: url(./images/interface.png);
+}
+
+#category-list .category#art_ID_AUTOMATA, .category.other-themes#art_ID_AUTOMATA{
+    background-image: url(./images/automata.png);
+}
+
+#category-list .category#art_ID_DIGITAL_ECOLOGIES, .category.other-themes#art_ID_DIGITAL_ECOLOGIES{
+    background-image: url(./images/digital_ecosystems.png);
+}
+
+#category-list .category#art_ID_SPECULATION, .category.other-themes#art_ID_SPECULATION{
+    background-image: url(./images/speculation.png);
+}
+
+#category-list .category#art_ID_EMBODIMENT, .category.other-themes#art_ID_EMBODIMENT{
+    background-image: url(./images/embodiment.png);
+}
+
+#category-list .category#art_ID_PERFORMANCE, .category.other-themes#art_ID_PERFORMANCE{
+    background-image: url(./images/performance.png);
+}
+
+#category-list .category#art_ID_SONIC, .category.other-themes#art_ID_SONIC{
+    background-image: url(./images/sound.png);
+}
+
+#category-list .category#art_ID_PHANTOMS, .category.other-themes#art_ID_PHANTOMS{
+    background-image: url(./images/phantoms.png);
+}
+
+#category-list .category#art_ID_SIGNS_AND_SIGNALS, .category.other-themes#art_ID_SIGNS_AND_SIGNALS{
+    background-image: url(./images/signs_signals.png);
+}
+
+
+#category-list .category#art_ID_DISRUPTING_FORMS, .category.other-themes#art_ID_DISRUPTING_FORMS{
+    background-image: url(./images/disrupting_form.png);
+}
+
+#category-list .category#art_ID_WITNESSING_AND_INTERVENING, .category.other-themes#art_ID_WITNESSING_AND_INTERVENING{
+    background-image: url(./images/witnessing.png);
+}
+
 /* Category styles */
 .category-info{
     /*background-color: #ffffb3;*/
@@ -297,6 +363,7 @@ g text.cls-1:hover{
     text-transform: uppercase;
     text-align: left;
     margin-top: -30px;
+    padding-right: 30px;
 }
 
 .category-info .other-themes{
@@ -400,10 +467,54 @@ g text.cls-1:hover{
 
 }
 
-ul, ol{
+#info ul, #info ol{
     list-style: none;
+    text-align: center important!;
+    padding: 2em 0;
+}
+
+#info li{
+    margin: 1em 0;
+}
+
+#info li p{
+    margin: 0;
 }
 
 #physical-map:hover, #connections-map:hover, #info-map:hover{
     cursor: pointer;
+}
+
+#info{
+    text-align: left;
+}
+
+#info .info-text{
+    padding: 1em;
+}
+
+#info p{
+    border: none;
+    /*padding: 1em;*/
+}
+
+#info h3 {
+
+    text-align: center;
+    border-top: 1px solid black;
+    line-height: 2em;
+    border-bottom: 1px solid black;
+    margin-bottom: 0;   
+}
+
+#info #subscribe{
+    margin-bottom: 5em;
+}
+
+#info h4{
+    margin: 0;
+}
+
+#info a {
+    color: black;
 }

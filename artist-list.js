@@ -1,5 +1,27 @@
 $(document).ready(function(){
 
+    // show physical map
+    $('#physical-map').click(function(){
+       $('.connections-container, .info-container').addClass('hide');
+       $('.map-container').removeClass('hide');
+       $('#connections-map, #info-map').removeClass('active');
+       $('#physical-map').addClass('active');
+    });
+    // show theme map
+    $('#connections-map').click(function(){ 
+        $('.map-container, .info-container').addClass('hide');
+        $('.connections-container').removeClass('hide');
+        $('#physical-map,#info-map').removeClass('active');
+        $('#connections-map').addClass('active');
+    });
+    // show info page
+    $('#info-map').click(function(){
+        $('.connections-container,.map-container').addClass('hide');
+        $('.info-container').removeClass('hide');
+        $('#physical-map,#connections-map').removeClass('active');
+        $('#info-map').addClass('active');
+    });
+
     $.getJSON("names.json", function(data){
         var artists = [];
 
@@ -20,7 +42,7 @@ $(document).ready(function(){
             $("#connections-map line").css({"stroke": "gray","opacity":"1","stroke-width": 1})
             // reset all circles
             $("#connections-map circle").css({'fill':'white',"stroke":'#ccc'});
-            $("g.artist circle").css({"display":"none"});
+            $("#exhibition-map g.artist circle").css({"display":"none"});
             // reset all listed artists
             $(".artist-list p").css({"text-decoration":"none"});
             // reset all artists on the physical map
@@ -40,13 +62,13 @@ $(document).ready(function(){
                     $("circle#art_"+dataset.edges[i].target.id).css({'fill':'darkgray','stroke':'black'});
                     $("circle#art_"+dataset.edges[i].source.id).css({'fill':'darkgray','stroke':'black'});
                     if(dataset.edges[i].target.type == "artist"){
-                        $("g.artist#art_"+dataset.edges[i].target.id).css({"text-decoration":"underline"});
-                        $("g.artist#art_"+dataset.edges[i].target.id+" circle").css({"display":"block"});
+                        // $("g.artist#art_"+dataset.edges[i].target.id).css({"text-decoration":"underline"});
+                        $("#exhibition-map g.artist#art_"+dataset.edges[i].target.id+" circle").css({"display":"block"});
                         $(".artist-list#art_"+dataset.edges[i].target.id).css({"text-decoration":"underline"});
                     }
                     if(dataset.edges[i].source.type == "artist"){
-                        $("g.artist#art_"+dataset.edges[i].source.id).css({"text-decoration":"underline"});
-                        $("g.artist#art_"+dataset.edges[i].source.id+" circle").css({"display":"block"});
+                        // $("g.artist#art_"+dataset.edges[i].source.id).css({"text-decoration":"underline"});
+                        $("#exhibition-map g.artist#art_"+dataset.edges[i].source.id+" circle").css({"display":"block"});
                         $(".artist-list #art_"+dataset.edges[i].source.id).css({"text-decoration":"underline"});
                     }
                     if(dataset.edges[i].target.type == "category"){
@@ -62,8 +84,8 @@ $(document).ready(function(){
 
 
             // highlight lines associated with the selected artist/category/tag
-            $("line[source='"+string_id+"'").css({"stroke": "black","opacity":"1","stroke-width": 2})
-            $("line[target='"+string_id+"'").css({"stroke": "black","opacity":"1","stroke-width": 2})
+            $("line[source='"+string_id+"']").css({"stroke": "black","opacity":"1","stroke-width": 2})
+            $("line[target='"+string_id+"']").css({"stroke": "black","opacity":"1","stroke-width": 2})
 
 
             // highlight selected entity's circle
@@ -75,7 +97,7 @@ $(document).ready(function(){
                 // highlight selected artist in the list
                 $(".artist-list #"+string_id).css({"text-decoration":"underline"});
                 // highlight selected artist on the physical map
-                $("g.artist#"+string_id).css({"text-decoration":"underline"});
+                // $("g.artist#"+string_id).css({"text-decoration":"underline"});
                 $("g.artist#"+string_id+" circle").css({"display":"block"});
             }
 

@@ -1,0 +1,398 @@
+ .header-logo{
+            
+            width:550px;
+            margin: 0px 0 0 -275px !important;
+            padding-left:50%;
+            display: block;
+            position: absolute;
+            color: white;
+            text-align:center;
+            top:25%;
+        }
+        
+        html, body, #masthead-wrapper, canvas, main, header{
+            margin:0;
+            border:0;
+            padding:0;
+            background-color: white;
+            font-family:spot_mono;
+            text-align: center;
+            font-family:spot_mono;
+        }
+        
+        canvas{
+            display:block;
+        }
+        
+        footer{
+            position: absolute;
+            bottom:0;
+            margin:0;
+            padding:0;
+            width:100%;
+            text-align:center;
+            background-color:white;
+            border-top: black 1px solid;
+            
+        }
+        
+        p{
+            padding: 5px 0;
+            margin: 0;
+            border-bottom: 1px solid black;
+        }
+
+p.artist{
+    border:none;
+}
+        
+        @font-face{
+            
+            font-family: spot_mono;
+            src: url(./fonts/spot_mono_webfonts/spot_mono_light.woff);
+        }
+
+.top-nav{
+    
+     margin:0;
+           /* position:absolute;*/
+            width:100%;
+            padding:5px 0;
+            background-color: white;
+            border-bottom: 1px black solid;
+            border-top: 1px black solid;
+    position:fixed;
+    top:0;
+    z-index: 100;
+            
+    
+    
+}
+
+.top-nav a{
+    display:inline;
+    background-color: #000;
+    color:#fff;
+    padding:5px 10px;
+    float:right;
+    font-size:20px;
+    font-weight:bold;
+    margin-left:18px;
+    position: relative;
+    right: 5px;
+    
+    
+}
+
+
+.echosystems-content{
+    margin-top:50px;
+   
+}    
+        h2{
+            
+            position: relative;
+            display: inline;
+            
+           
+        }
+        
+        body{
+            
+            font-family: spot_mono;
+        }
+
+
+        
+        .map{
+            
+            margin-top:40px;
+            padding-left:40px;
+            margin-bottom:40px;
+            width:80%;
+            display:block;
+           
+            
+        }
+
+
+
+.theme-nav{
+    float:right;
+    width:15%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    clear: right;
+    
+}
+
+.theme-nav p{
+    text-align:left;
+    cursor: pointer;
+}
+
+        g text{
+            cursor: pointer;
+    
+        }
+
+g text.cls-1:hover{
+   
+    text-decoration: underline;
+}
+
+
+/*Modal styles*/
+
+.artist-info{
+    background-color: #ffffff;
+    border: 3px solid black;
+    margin:10px;
+    margin-bottom:20px;
+    padding-bottom:60px;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    position:fixed;
+    top:0px;
+    max-height:90%;
+    overflow: scroll;
+  
+    width:100%;
+    height:auto;
+    
+}
+
+.artist-info .name{
+    font-size: 18px;
+    font-weight:bold;
+}
+
+.artist-info .other-themes{
+    font-size: 12px;
+    text-align:left;
+}
+
+.artist-info .bio{
+    text-align:left;
+    margin-top:10px;
+}
+
+.esc{
+    
+    position: relative;
+    top:10px;
+    left:10px;
+    text-align: left;
+    font-size:40px;
+    font-weight: bold;
+    cursor: pointer;
+   
+    font-weight:bold;
+}
+
+/**Artist List Styles**/
+
+.artist-list-container{
+    
+    position:relative;
+    width:100%;
+    display:block;
+    height:auto;
+    
+}
+
+.artist-list{
+    
+    width: 18%;
+    float: left;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display:block;
+    position:fixed;
+}
+
+.connections{
+    width: 80%;
+    
+ 
+    height:100%;
+    display:block;
+   
+    
+}
+
+.artist-list p{
+    text-align: left;
+    margin-left:20px;
+    cursor: pointer;
+    
+}
+
+.statement{
+    
+    border: none;
+    text-align: left;
+    margin:5px;
+}
+
+
+/*SVG styles*/
+
+.cls-1, .cls-41, .cls-49 {
+        font-size: 10px;
+            
+      }
+
+      .cls-1, .cls-23, .cls-41 {
+        fill: #3b342d;
+      }
+
+      .cls-1, .cls-23, .cls-41, .cls-49 {
+        font-family: spot_mono;
+      }
+
+
+
+      .cls-45, .cls-46 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-45 {
+        stroke-width: 2.83px;
+      }
+
+      .cls-46 {
+        stroke-width: 1.42px;
+      }
+
+
+/* CATEGORY STYLES***/
+#category-list .category{
+    padding-left: 30px;
+    padding-top:5px;
+    padding-bottom:5px;
+
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#category-list .category#ID_TEMPORAL{
+    background-image: url(./images/temporality.png);
+}
+#category-list .category#ID_INTERFACING_AND_PLAY{
+    background-image: url(./images/interface.png);
+}
+#category-list .category#ID_AUTOMATA{
+    background-image: url(./images/automata.png);
+}
+#category-list .category#ID_DIGITAL_ECOLOGIES{
+    background-image: url(./images/digital_ecosystems.png);
+}
+#category-list .category#ID_SPECULATION{
+    background-image: url(./images/speculation.png);
+}
+#category-list .category#ID_PERFORMANCE{
+    background-image: url(./images/performance.png);
+}
+#category-list .category#ID_SONIC{
+    background-image: url(./images/sound.png);
+}
+#category-list .category#ID_PHANTOMS{
+    background-image: url(./images/phantoms.png);
+}
+#category-list .category#ID_SIGNS_SIGNALS{
+    background-image: url(./images/signs_signals.png);
+}
+#category-list .category#ID_DISRUPTING_FORMS{
+    background-image: url(./images/disrupting_form.png);
+}
+#category-list .category#ID_WITNESSING_AND_INTERVENING{
+    background-image: url(./images/witnessing.png);
+}
+#category-list .category#ID_EMBODIMENT{
+    background-image: url(./images/embodiment.png);
+}
+
+p.theme{
+    
+    text-align: left;
+    margin:5px;
+    border:none;
+}
+
+.themes h3{
+    
+    padding-left: 80px;
+    padding-top:20px;
+    padding-bottom:20px;
+
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: left;
+    
+    
+}
+
+h3.temporal{
+    
+       background-image: url(./images/temporality.png);
+}
+
+h3.interfacing{
+    
+       background-image: url(./images/interface.png);
+}
+
+h3.automata{
+    
+       background-image: url(./images/automata.png);
+}
+
+h3.ecologies{
+    
+       background-image: url(./images/digital_ecosystems.png);
+}
+
+h3.speculation{
+    
+       background-image: url(./images/speculation.png);
+}
+
+h3.performance{
+    
+       background-image: url(./images/performance.png);
+}
+
+h3.embodiment{
+    
+       background-image: url(./images/embodiment.png);
+}
+h3.sound{
+    background-image: url(./images/sound.png);
+}
+h3.phantoms{
+     background-image: url(./images/phantoms.png);
+}
+h3.signs_and_signals{
+     background-image: url(./images/signs_signals.png);
+}
+
+h3.witnessing{
+     background-image: url(./images/witnessing.png);
+}
+h3.disrupting{
+      background-image: url(./images/disrupting_form.png);
+}
+
+
+
+
+
+
+

@@ -2,45 +2,42 @@
 <html>
     <meta charset="utf-8">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-79452606-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-79452606-4');
+</script>
+
         <title>Echosystems: Goldsmiths Computational Arts MA & MFA Degree Show</title>
         <link rel="stylesheet" href="echosystems.css" type="text/css">
         <script src="source/jquery-2.2.3.min.js"></script>
-        <script src="map.js"></script>
         <script type="text/javascript" src="scripts/d3.min.js"></script>
-        <script src="artist-list.js"></script>    
-        <!-- <script type="text/javascript" src="scripts/p5.min.js"></script> -->
-        <!-- <script type="text/javascript" src="scripts/echo.js"></script> -->
+        <script type="text/javascript" src="scripts/p5.min.js"></script>
+        <script type="text/javascript" src="scripts/echo.js"></script>
 
+        <script type="text/javascript">
+
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                top.location.href="./mobile/";
+            }
+            
+            function detectmob() {
+                if(window.innerWidth <= 800 || window.innerHeight <= 600) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            if (detectmob()){
+                top.location.href="./mobile/";
+            }
+        </script>
     </head>
-
-
-
-
-    <script>
-        $(document).ready(function(){
-            // show physical map
-            $('#physical-map').click(function(){
-               $('.connections-container, .info-container').addClass('hide');
-               $('.map-container').removeClass('hide');
-               $('#connections-map, #info-map').removeClass('active');
-               $('#physical-map').addClass('active');
-            });
-            // show theme map
-            $('#connections-map').click(function(){ 
-                $('.map-container, .info-container').addClass('hide');
-                $('.connections-container').removeClass('hide');
-                $('#physical-map,#info-map').removeClass('active');
-                $('#connections-map').addClass('active');
-            });
-            // show info page
-            $('#info-map').click(function(){
-                $('.connections-container,.map-container').addClass('hide');
-                $('.info-container').removeClass('hide');
-                $('#physical-map,#connections-map').removeClass('active');
-                $('#info-map').addClass('active');
-            });
-        });
-    </script>
     <style>
     .hide{
         display:none;
@@ -59,12 +56,12 @@
     <body>
 
         <nav class="top-nav">
-            <h3 id="physical-map" class="active" style="float: left;border-right: 1px solid #000;">PHYSICAL MAP</h3>
+            <h3 id="physical-map" style="float: left;border-right: 1px solid #000;">PHYSICAL MAP</h3>
             <h1 class="center" style="text-align: center;padding-left:18%;padding-right:18%;">ECHOSYSTEMS - GOLDSMITHS COMPUTATIONAL ARTS MA &amp; MFA DEGREE SHOW</h1>
             <h3 id="connections-map" style="float: right; border-left: 1px solid #000; top: 0; right: 0;">THEMATIC MAP</h3>
         </nav>
         <nav class="bottom-nav">
-            <h3 id="info-map" style="float: left; border-right: 1px solid #000;">INFO</h3>
+            <h3 id="info-map" class="active" style="float: left; border-right: 1px solid #000;">INFO</h3>
             <h1 class="center" style="text-align: center;text-align: center;">6—9 SEPTEMBER 2018. <a target="_blank" href="https://goo.gl/maps/DpAFRLUAjUx">GOLDSMITHS, ST. JAMES HATCHAM BUILDING</a>.</h1>
             <h3 id="social-media" style="float: right; top: 0; right: 0; border-left: 1px solid #000;width: 9%;right:9%"><a target="_blank" style="text-decoration:none;" href="https://www.instagram.com/goldsmithscomparts/">INSTAGRAM</a></h3>
             <h3 id="social-media" style="float: right; top: 0; right: 0; border-left: 1px solid #000;width: 9%"><a style="text-decoration:none;" target="_blank" href="https://twitter.com/EchoSystemsShow">TWITTER</a></h3>
@@ -101,20 +98,107 @@
 
         </div>
         <!-- exhibition info -->
-        <div class="info-container content-container hide">
-            <div id="info" class="info" style="">
-                <div>
-                    <h3 style="text-align:center">ECHOSYSTEMS</h3>
-                    <!-- <p> -->
-                    <ul>
-                        <li><b>Thur Sept 6th:</b> open 6pm-9pm, events 7pm-9pm</li>
-                        <li><b>Fri Sept 7th:</b> open 10am-9pm, events 7pm-9pm</li>
-                        <li><b>Sat Sept 8th:</b> open 10am-9pm, events 3pm-8pm</li>
-                        <li><b>Sun Sept 9th:</b> open 10am-5pm, events 1pm-5pm</li>
+        <div class="info-container content-container">
+            <img class="header-logo" src="images/logo_landscape.png">
+            <div id="canvas-container" style="height: 100%;"></div>
+            <div id="info" class="info">
+                <h3 style="margin-top:0;">CURATORS CAROLINE SINGH BELMAR & SARANYA KUNDASAMY</h3>
+                <div class="info-text">
+                    <p>
+                        The rearranging of reality comes as no surprise. Every day glitches, in memory, emotions, stocks, politics, identity and power, permeate the experiences we take for granted. The future has become polarised. An oasis of possibilities diverges from a self-inflicted, perennial wasteland. Tribes, parties and institutions fight in the never-ending capitalist war for your attention, affection and awareness (or lack thereof).
+                    </p>
+                    <p>
+                        As these half-waking premonitions haunt our present day, it feels vital to populate the technological sphere with diversity and constructive dissonance, through taking ownership of the processes and systems in place. To build and re-imagine platforms held together by multilateralism, a system of connections that is bigger than the sum of its parts, and speaks to the widest range of future dimensions.
+                    </p>
+                    <p>
+                        ‘Echosystems’ reflects this fragile, glitchy reality/utopia. Through the integration and assimilation of juxtaposing ecosystems, based on sprawling concepts such as time, affect, ecology, embodiment, transmission and witnessing, the exhibition binds these together, creating a highly intricate, enriching network, and galvanizing a symbiotic yet splintered understanding.
+                    </p>
+                    <p>
+                        The virtual opposite of the infamous echo-chambers, ‘Echosystems’ represents both a duality and dichotomy, carrying polyglot echoes beyond established networks while acting as a ghostly portal to a plural future, informing rather than subverting, coalescing instead of categorizing.
+                    </p>
+                    <p>
+                        If systems thinking is a hallmark of computer science, these artists fold a myriad of inputs and experiences into their own artistic processes and methods, merging the occult with the scientific, the speculative with the ecological, and the embodied with the coded.
+                    </p>
+                    <p>
+                        Through the creation and re-definition of human and computer agency, and through the construction of original interactive phenomena, symbioses are born and nurtured, hoping to be extrapolated and implemented with the same reckless disciplinary abandon, pioneering new perspectives and re-coding the glitches.
+                    </p>
+                </div>
+                <h3>OPENING HOURS</h3>
+                <div class="info-text">
+                    <ul>         
+                        <li><h4>THURSDAY 6 SEPTEMBER</h4><p>open 6pm-9pm</p></li>
+                        <li><h4>FRIDAY 7 SEPTEMBER</h4><p>open 10am-9pm</p></li>
+                        <li><h4>SATURDAY 8 SEPTEMBER</h4><p>open 10am-9pm</p></li>
+                        <li><h4>SUNDAY 9 SEPTEMBER</h4><p>open 10am-5pm</p></li>
                     </ul>
                 </div>
-            <a style="color:black" target="_blank" href="https://xyz.us18.list-manage.com/subscribe?u=09c6ca37e17eea84296de412c&id=5251a52f2e">Subscribe to the Newsletter</a>
-            </div>
+               <!--  <h3>EVENTS</h3>
+                <div class="info-text">
+                    <ul>
+                        <li>
+                            <h4>THURSDAY</h4> 
+                            <p>OPENING NIGHT</p>
+                            <p>7:00—7:15 Performance by Laurie Carter</p>
+                            <p>7:15—7:30 Performance by Benjamin Sammon</p>
+                            <p>7:30—7:45 Performance by Annie Tådne</p>
+                            <p>7:45—8:00 Performance by Chris Speed</p>
+                            <p>8:00-8:30 BREAK</p>
+                            <p>8:30-8:45 Performance by Friendred</p>
+                        </li>
+                        <li>
+                            <h4>FRIDAY</h4>
+                            <p>AFTERNOON</p>
+                            <p>3:00—3:15</p>
+                            <p>Performance by Laurie Carter</p>
+                            <p>3:15—3:30 Performance by Benjamin Sammon</p>
+                            <p>3:30—3:45 Performance by Annie Tådne</p>
+                            <p>3:45—4:00 Performance by Chris Speed</p>
+                            <p>4:00-4:30 BREAK</p>
+                            <p>4:30—4:45 Performance by Friendred</p>
+                            <p>EVENING</p>
+                            <p>7:00—7:15 Performance by Laurie Carter</p>
+                            <p>7:15—7:30 Performance by Benjamin Sammon</p>
+                            <p>7:30—7:45 Performance by Annie Tådne</p>
+                            <p>7:45—8:00 Performance by Chris Speed</p>
+                            <p>8:00-8:30 BREAK</p>
+                            <p>8:30-8:45 Performance by Friendred</p>
+                        </li>
+
+                        <li>
+                            <h4>SATURDAY</h4>
+                            <p>AFTERNOON</p>
+                            <p>2:15—2:30 Performance by Laurie Carter</p>
+                            <p>2:30—2:45 Performance by Benjamin Sammon</p>
+                            <p>2:45—3:00 Performance by Annie Tådne</p>
+                            <p>3:00—3:15 Performance by Chris Speed</p>
+                            <p>3:15—3:45 BREAK</p>
+                            <p>3:45—4:00 Performance by Friendred</p>
+                            <p>4:00—5:00 BREAK</p>
+                            <p>5:00—6:00P Panel Conversation with artist collective FluX</p>
+                            <p>EVENING</p>
+                            <p>7:00—7:15 Performance by Laurie Carter</p>
+                            <p>7:15—7:30 Performance by Benjamin Sammon</p>
+                            <p>7:30—7:45 Performance by Annie Tådne</p>
+                            <p>7:45—8:00 Performance by Chris Speed</p>
+                            <p>8:00-8:30 BREAK</p>
+                            <p>8:30-8:45 Performance by Friendred</p>
+                        </li>
+                        <li>     
+                        <h4>SUNDAY</h4>
+                        <p>AFTERNOON</p>
+                        <p>3:00—3:15</p>
+                        <p>Performance by Laurie Carter</p>
+                        <p>3:15—3:30 Performance by Benjamin Sammon</p>
+                        <p>3:30—3:45 Performance by Annie Tådne</p>
+                        <p>3:45—4:00 Performance by Chris Speed</p>
+                        <p>4:00-4:30 BREAK</p>
+                        <p>4:30—4:45 Performance by Friendred</p>
+                        </li>
+                    </ul>
+                </div> -->
+                <h3 id="subscribe"><a target="_blank" href="https://xyz.us18.list-manage.com/subscribe?u=09c6ca37e17eea84296de412c&id=5251a52f2e">SUBSCRIBE TO NEWSLETTER</a></h3>
+                
+             </div>
         </div>
 
         <!-- Conceptual Map -->
@@ -124,7 +208,7 @@
             </div>
         </div>
         
-        <div class="map-container content-container">
+        <div class="map-container content-container hide">
             <!-- <h3>PHYSICAL MAP</h3> -->
 
             <!-- Ground floor SVG-->
@@ -255,11 +339,11 @@
                         <line class="cls-1" x1="838.7" y1="1145.53" x2="840.2" y2="1597.97"/>
                     </g>
                     <!-- annie # 2 -->
-                    <g id="art_ID_Annie_Tådne" class="artist">
+<!--                     <g id="art_ID_Annie_Tådne" class="artist">
                     	<circle cx="427" cy="565" r="25" style="fill:lightgray;display:none"/>
 						<text class="cls-3" x="415" y="570">Annie Tådne</text>
 					</g>
-                    
+                     -->
                     <text class="floor-title" x="220" y="1000">SECOND FLOOR</text>
 
                     <line class="cls-1" x1="196.41" y1="1439.76" x2="196.41" y2="1440.76"/>
@@ -283,66 +367,79 @@
             <div id="ID_TEMPORAL" class="category-info">
                 <div class="esc">x</div>
                 <div class="name">TEMPORAL</div>
+                <div class="tag other-themes">chronosystems</div>
                 <div class="bio">For these artists, time is the core of their practice. Be it through an engagement with History, the archive, data flows, narratives, or the process of making itself, it is time, the folding and unfolding of threads, transformation and becoming, that occupies the forefront of their preoccupations. </div>
             </div>
             <div id="ID_INTERFACING_AND_PLAY" class="category-info">
                 <div class="esc">x</div>
                 <div class="name">INTERFACING AND PLAY</div>
+                <div class="tag other-themes">intersystems</div>
                 <div class="bio">Firmly resolved to unhang art from its traditional museum walls, and break the glass of classical artistic distance, these artists explore new modes of engagement, play, and active experimentation from their audiences, at the intersection between technology, creation and games.</div>
             </div>
             <div id="ID_AUTOMATA" class="category-info">
                 <div class="esc">x</div>
                 <div class="name">AUTOMATA</div>
+                <div class="tag other-themes">emosystems</div>
                 <div class="bio">Can machines feel? Do algorithms care? And what are the consequences for art forms existing in the spaces of interaction between themselves and with humans? At the dawn of a new era in Artificial Intelligence discovery, these artists engage with the possibility of robotic and computational agency, relying in part on Affect Theory.</div>
             </div>
             <div id="ID_DIGITAL_ECOLOGIES" class="category-info">
                 <div class="esc">x</div>
                 <div class="name">DIGITAL ECOLOGIES</div>
+                <div class="tag other-themes">ecosystems</div>
                 <div class="bio">As questions of environmental crises become ever more pressing, these artists revisit and reshape the notions of ecosystems, natural phenomena, and the role of the human in reconfigured ecologies.</div>
             </div>
             <div id="ID_SPECULATION" class="category-info">
                 <div class="esc">x</div>
                 <div class="name">SPECULATION</div>
+                <div class="tag other-themes">altersystems</div>
                 <div class="bio">Inspired by Donna Harraway’s method of imagining alternatives, feminist technoscience, and other theorists calling for a return to speculative philosophy and utopianism, these artists dive into the otherness of envisioned universes, and what these acts of creation mean for, and do to, our very own world.</div>
             </div>
             <div id="ID_EMBODIMENT" class="category-info">
                 <div class="esc">x</div>
                 <div class="name">EMBODIMENT</div>
+                <div class="tag other-themes">physiosystems</div>
                 <div class="bio">“For no one has thus far determined the power of the body…”, wrote Spinoza (Ethics, III, Proposition II, Scholium). More than 350 years later, artists, in chorus with scientists, agree, and continue to research the body in its sensorial, biological and expressive dimensions.</div>
             </div>
             <div id="ID_PERFORMANCE" class="category-info">
                 <div class="esc">x</div>
                 <div class="name">PERFORMANCE</div>
+                <div class="tag other-themes">perfosystems</div>
                 <div class="bio">Computational arts have a profound impact on the art of performance, leaving no practice untouched. These artists evolve in this shifting, live medium and will present their work as a series of performances throughout the duration of the exhibition.</div>
             </div>
             <div id="ID_SONIC" class="category-info">
                 <div class="esc">x</div>
                 <div class="name">SONIC</div>
+                <div class="tag other-themes">sonosystems</div>
                 <div class="bio">The experimentation with sound and the audible cannot be reduced to concerts or even recordings. The advances of computation and DIY fabrication opened up new and unforeseen alleyways of exploration into sound as a medium, almost as matter, for installation and immersion. These artists work with the sonic as such, be it in the form of recordings, soundscapes, or artistic studies into waveform phenomena.</div>
             </div>
             <div id="ID_PHANTOMS" class="category-info">
                 <div class="esc">x</div>
                 <div class="name">PHANTOMS</div>
+                <div class="tag other-themes">hauntosystems</div>
                 <div class="bio">Spooky non-beings and surreptitious presences (from creepy algorithms to fakes of all hues) haunt the digital age. Decades after Derrida’s hauntology, Baudrillard’s simulacra and Debord’s spectacle (and as even older shadows re-emerge from the Ancient past or Gothic Romanticism), artists, philosophers and critics are still grappling with the ungraspable and the uncanny. Beware phantom limbs and watch your echoes when hovering through the exhibition space!</div>
             </div>
             <div id="ID_SIGNS_AND_SIGNALS" class="category-info">
                 <div class="esc">x</div>
                 <div class="name">SIGNS AND SIGNALS</div>
+                <div class="tag other-themes">semiosystems</div>
                 <div class="bio">Turning one ubiquitous slogan of our time, ‘everything is data’, on its head, one can state: data is, data can be, everything. Numbers arranged in one way form an image. Those same numbers, rearranged, can be music. A flickering light stream plays a tune; points in space write a poem; minimal automata rules command abstract chatterings of starlings or virtual shoals of fish. These artists engage with phenomena of emergence, but also, conversely, track signs and meaning appearing in the most diverse of contexts, what in the medium makes a language, the transmutation of one thing into another, and irruption of the whole as an excess over the sum of its parts.</div>
             </div>
             <div id="ID_DISRUPTING_FORMS" class="category-info">
                 <div class="esc">x</div>
                 <div class="name">DISRUPTING FORMS</div>
+                <div class="tag other-themes">ideosystems</div>
                 <div class="bio">Abstraction is alive and well. For these artists, aesthetic concerns are a fundamental part of their practice. Be it through formal or conceptual approaches, an obsession with beauty or novelty, a slant toward systemic change or renewed perceptions, they engage with the tradition and seek to disrupt established forms, realign the tenets of convention, and find new definitions of their art. </div>
             </div>
             <div id="ID_WITNESSING_AND_INTERVENING" class="category-info">
                 <div class="esc">x</div>
                 <div class="name">WITNESSING AND INTERVENING</div>
+                <div class="tag other-themes">cosmosystems</div>
                 <div class="bio">For some, like Marx, the point is to change the world. For others, like Rilke, you must change your life. For others yet, like Elie Wiesel, we must bear witness. Be it in the form of direct intervention, patient recollection or careful observation, the works of these artists exist in a close, often intense, at times witty, ironic or even conflictual relationship with the external world – both being influenced and shaped by the other. </div>
             </div>
         </div>
 
-        <script type="text/javascript" src="scripts/theme-map.js"></script>
-
+        <script type="text/javascript" src="theme-map.js"></script>
+        <script src="map.js"></script>
+        <script src="artist-list.js"></script> 
     </body>
 </html>
