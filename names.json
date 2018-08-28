@@ -75,7 +75,10 @@
 		"bio": "Panja Göbel makes interactive conceptual artworks and installations that reinterpret our relationship with technology. Blurring the boundaries between human and machine, her work proposes new methods of feeling and thinking with technology.<br><br>Working across different technologies and disciplines, she pairs unlikely elements to create sometimes uncomfortable spaces to invite new conversations.<br><br>Whilst often commenting on issues of oppression, her pieces contain a ludic element where interaction presents an open space for exploration, to leave the audience with their own interpretation.<br><br>Currently Panja is exploring phantom syndromes and metaplasms in a project that combines reinterpreted Victorian prosthetics, physical computing and an augmented projection that computes the user’s movements.<br><br>Her previous piece, ‘Face Casino’ interrogates the relationship we have with facial recognition systems by proposing a system of machine masking.<br><br>Bringing a feminist, alternative perspective to technology, her pieces often subvert existing interpretations of computational systems by asking the audience to renegotiate the tangled networks of humans and machines.",
 		"project": "...",
 		"website": "http://www.panjapop.com",
-		"social":[],
+		"social":[
+			{"instagram":"https://www.instagram.com/booleanhairloop/"},
+			{"tumblr":"https://panjapop.tumblr.com/"}
+		],
 		"location":[
 			["240","250"]
 		]
@@ -180,9 +183,9 @@
 		],
 		"tag": [
 		],
-		"bio": "",
+		"bio": "Amit Segall is a multidisciplinary technology artist, creative coder and musician, who worked with many artists and dance group such as Cirque Du Soleil and MAYUMANA. Segall is interested in creative solutions for interactive art from both a technical perspective and artistic alike. Segall have been working in the professional audio industry as an interactive audio developer, sound designer and an Ableton live certified trainer. He is a self-taught artist who likes exploring themes such as: audience interaction during a live performance, use distributed audio to create immersive theatre, experiment with audiovisual design esthetics and develop interactive light sculptures. Segall creates tools for pushing the boundaries of music, dance and the immersive experience.",
 		"project": "...",
-		"website": "",
+		"website": "http://www.amitsegall.com/",
 		"social":[],
 		"location":[
 			["950","1660"]
