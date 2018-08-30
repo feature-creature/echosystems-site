@@ -86,7 +86,8 @@
 
 				// SVG global
 				var w = $(".info-container").width();
-				var h = $(".info-container").height();
+				// var h = $(".info-container").height();
+				var h = 2500;
 
 				//Initialize a force layout
 				var force = d3.layout.force()
@@ -177,7 +178,7 @@
 						 .attr("y", function(d) { return d.y - 20;});
 				});
 
-				zoom.scale(0.4);
+				zoom.scale(0.35);
 				zoom.event(svg);
 			});
 
