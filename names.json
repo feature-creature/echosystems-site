@@ -910,7 +910,7 @@
 		],
 		"bio": "James Tregaskis has worked with technology since the early seventies, starting as an animator and producing advertisements using computational methods to create ‘cel animations’ and titles for ‘The New Avengers’. Medi-Cine, Halas and Batchelor were among his clients. After graduating, he worked in advertising, piloting the first portable computer for Pfizer in the UK, United States and Canada. At that period, James sold his soul to ‘mammon’, working as a software developer, mostly for financial institutions until he could stand it no more. \n So, after travelling the world on his motorcycle, he returned to re-explore the joys of computing but divorced himself from commerce. James has hosted ‘Outsider In’ on Resonance 104.4fm – showcasing outsider artists and musicians. He has studied Buddhist thangka paintings for the last 25 years and is interested in the Fourth Way practice, as a means to examine one’s life experience and to make sense of it.",
 		"project": "...",
-		"website": "",
+		"website": "http://tregaskis.net/",
 		"social":[],
 		"location":[
 			["480","1180"]
@@ -926,6 +926,10 @@
 			},
 			{
 				"id": "2",
+				"theme": "SPECULATION"
+			},
+			{
+				"id": "3",
 				"theme": "SONIC"
 			}
 		],
